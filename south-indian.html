@@ -1,0 +1,975 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>South Indian Food | Urban Tadka</title>
+
+    <link rel="stylesheet" href="south-indian.css">
+</head>
+
+<body>
+
+
+<!-- ================= NAVBAR ================= -->
+
+<header class="navbar">
+
+    <a href="index.html" class="logo">
+        <span>Urban</span> Tadka
+    </a>
+
+
+    <nav class="nav-links">
+
+        <a href="index.html">
+            Home
+        </a>
+
+        <a href="indian.html">
+            Indian
+        </a>
+
+        <a href="chinese.html">
+            Chinese
+        </a>
+
+        <a href="italian.html">
+            Italian
+        </a>
+
+        <a href="south-indian.html" class="active">
+            South Indian
+        </a>
+
+        <a href="fast-food.html">
+            Fast Food
+        </a>
+
+        <a href="desserts.html">
+            Desserts
+        </a>
+
+    </nav>
+
+
+    <div class="nav-right">
+
+        <div class="search-box">
+
+            <input
+                type="text"
+                id="searchInput"
+                placeholder="Search food..."
+            >
+
+            <button id="searchBtn">
+                🔍
+            </button>
+
+        </div>
+
+
+        <button
+            class="cart-button"
+            id="cartButton"
+        >
+            🛒
+            <span id="cartCount">0</span>
+        </button>
+
+    </div>
+
+</header>
+
+
+
+<!-- ================= HERO ================= -->
+
+<section class="hero">
+
+    <div class="hero-content">
+
+        <div class="hero-emoji">
+            🍛
+        </div>
+
+        <p>
+            WELCOME TO URBAN TADKA
+        </p>
+
+        <h1>
+            South Indian Cuisine
+        </h1>
+
+        <span>
+            Authentic South Indian flavours,
+            fresh ingredients and amazing taste.
+        </span>
+
+    </div>
+
+</section>
+
+
+
+<!-- ================= MENU ================= -->
+
+<section class="menu-section">
+
+    <div class="heading">
+
+        <p>
+            EXPLORE SOUTH INDIAN FOOD
+        </p>
+
+        <h2>
+            South Indian Menu
+        </h2>
+
+        <span>
+            Choose your favourite South Indian dish
+        </span>
+
+    </div>
+
+
+
+    <!-- ================= CATEGORIES ================= -->
+
+    <div class="categories">
+
+        <button
+            class="category active"
+            data-category="all"
+        >
+            All
+        </button>
+
+        <button
+            class="category"
+            data-category="dosa"
+        >
+            Dosa
+        </button>
+
+        <button
+            class="category"
+            data-category="idli"
+        >
+            Idli
+        </button>
+
+        <button
+            class="category"
+            data-category="vada"
+        >
+            Vada
+        </button>
+
+        <button
+            class="category"
+            data-category="rice"
+        >
+            Rice
+        </button>
+
+        <button
+            class="category"
+            data-category="uttapam"
+        >
+            Uttapam
+        </button>
+
+        <button
+            class="category"
+            data-category="special"
+        >
+            Special
+        </button>
+
+        <button
+            class="category"
+            data-category="dessert"
+        >
+            Dessert
+        </button>
+
+    </div>
+
+
+
+    <!-- ================= FOOD GRID ================= -->
+
+    <div
+        class="food-grid"
+        id="foodGrid"
+    >
+
+
+        <!-- FOOD 1 -->
+
+        <div
+            class="food-card"
+            data-category="dosa"
+            data-name="Masala Dosa"
+        >
+
+            <div class="food-image">
+
+                <!-- APNI IMAGE YAHAN LAGAO -->
+
+                <img
+                    src="https://tse4.mm.bing.net/th/id/OIP.9oCUME-nS4ZS8eWpbJh8iwHaFw?r=0&rs=1&pid=ImgDetMain&o=7&rm=3"
+                    alt="Masala Dosa"
+                >
+
+            </div>
+
+
+            <div class="food-content">
+
+                <span class="tag bestseller">
+                    BESTSELLER
+                </span>
+
+                <h3>
+                    Masala Dosa
+                </h3>
+
+                <p>
+                    Crispy dosa filled with spicy potato
+                    masala, served with sambar and chutney.
+                </p>
+
+
+                <div class="food-bottom">
+
+                    <strong>
+                        ₹149
+                    </strong>
+
+                    <button
+                        class="add-cart"
+                        data-name="Masala Dosa"
+                        data-price="149"
+                    >
+                        Add to Cart
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- FOOD 2 -->
+
+        <div
+            class="food-card"
+            data-category="idli"
+            data-name="Idli Sambar"
+        >
+
+            <div class="food-image">
+
+                <!-- APNI IMAGE YAHAN LAGAO -->
+
+                <img
+                    src="https://th.bing.com/th/id/OIP.EAJ1qlej11kbh2NKv9_HFgHaE8?r=0&o=7rm=3&rs=1&pid=ImgDetMain&o=7&rm=3"
+                    alt="Idli Sambar"
+                >
+
+            </div>
+
+
+            <div class="food-content">
+
+                <span class="tag">
+                    VEG
+                </span>
+
+                <h3>
+                    Idli Sambar
+                </h3>
+
+                <p>
+                    Soft and fluffy idli served with hot
+                    sambar and fresh coconut chutney.
+                </p>
+
+
+                <div class="food-bottom">
+
+                    <strong>
+                        ₹99
+                    </strong>
+
+                    <button
+                        class="add-cart"
+                        data-name="Idli Sambar"
+                        data-price="99"
+                    >
+                        Add to Cart
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- FOOD 3 -->
+
+        <div
+            class="food-card"
+            data-category="vada"
+            data-name="Medu Vada"
+        >
+
+            <div class="food-image">
+
+                <!-- APNI IMAGE YAHAN LAGAO -->
+
+                <img
+                    src="https://th.bing.com/th/id/OIP.bWrW_xIqvfTvBax2mnKAJwHaHa?r=0&o=7rm=3&rs=1&pid=ImgDetMain&o=7&rm=3"
+                    alt="Medu Vada"
+                >
+
+            </div>
+
+
+            <div class="food-content">
+
+                <span class="tag">
+                    VEG
+                </span>
+
+                <h3>
+                    Medu Vada
+                </h3>
+
+                <p>
+                    Crispy South Indian vada served with
+                    delicious sambar and coconut chutney.
+                </p>
+
+
+                <div class="food-bottom">
+
+                    <strong>
+                        ₹119
+                    </strong>
+
+                    <button
+                        class="add-cart"
+                        data-name="Medu Vada"
+                        data-price="119"
+                    >
+                        Add to Cart
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- FOOD 4 -->
+
+        <div
+            class="food-card"
+            data-category="dosa"
+            data-name="Plain Dosa"
+        >
+
+            <div class="food-image">
+
+                <img
+                    src="https://th.bing.com/th/id/OIP.ApBq8VJuZe7Ln-i-xCh6BQHaFL?r=0&o=7rm=3&rs=1&pid=ImgDetMain&o=7&rm=3"
+                    alt="Plain Dosa"
+                >
+
+            </div>
+
+
+            <div class="food-content">
+
+                <span class="tag">
+                    VEG
+                </span>
+
+                <h3>
+                    Plain Dosa
+                </h3>
+
+                <p>
+                    Traditional crispy dosa served with
+                    coconut chutney and sambar.
+                </p>
+
+
+                <div class="food-bottom">
+
+                    <strong>
+                        ₹109
+                    </strong>
+
+                    <button
+                        class="add-cart"
+                        data-name="Plain Dosa"
+                        data-price="109"
+                    >
+                        Add to Cart
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- FOOD 5 -->
+
+        <div
+            class="food-card"
+            data-category="dosa"
+            data-name="Rava Dosa"
+        >
+
+            <div class="food-image">
+
+                <img
+                    src="https://tse2.mm.bing.net/th/id/OIP.Fcl6mZUdGpxNj9T-iAyUSgHaLL?r=0&rs=1&pid=ImgDetMain&o=7&rm=3"
+                    alt="Rava Dosa"
+                >
+
+            </div>
+
+
+            <div class="food-content">
+
+                <span class="tag bestseller">
+                    POPULAR
+                </span>
+
+                <h3>
+                    Rava Dosa
+                </h3>
+
+                <p>
+                    Thin and crispy rava dosa prepared
+                    with authentic South Indian flavours.
+                </p>
+
+
+                <div class="food-bottom">
+
+                    <strong>
+                        ₹169
+                    </strong>
+
+                    <button
+                        class="add-cart"
+                        data-name="Rava Dosa"
+                        data-price="169"
+                    >
+                        Add to Cart
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- FOOD 6 -->
+
+        <div
+            class="food-card"
+            data-category="uttapam"
+            data-name="Vegetable Uttapam"
+        >
+
+            <div class="food-image">
+
+                <img
+                    src="https://tse4.mm.bing.net/th/id/OIP.8UJ_Zzhx4FFXUBLv07j_ZwHaE7?r=0&rs=1&pid=ImgDetMain&o=7&rm=3"
+                    alt="Vegetable Uttapam"
+                >
+
+            </div>
+
+
+            <div class="food-content">
+
+                <span class="tag">
+                    VEG
+                </span>
+
+                <h3>
+                    Vegetable Uttapam
+                </h3>
+
+                <p>
+                    Soft uttapam topped with fresh vegetables
+                    and delicious South Indian spices.
+                </p>
+
+
+                <div class="food-bottom">
+
+                    <strong>
+                        ₹159
+                    </strong>
+
+                    <button
+                        class="add-cart"
+                        data-name="Vegetable Uttapam"
+                        data-price="159"
+                    >
+                        Add to Cart
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- FOOD 7 -->
+
+        <div
+            class="food-card"
+            data-category="rice"
+            data-name="Sambar Rice"
+        >
+
+            <div class="food-image">
+
+                <img
+                    src="https://www.cookclickndevour.com/wp-content/uploads/2017/11/sambar-sadham-recipe-a-768x1152.jpg"
+                    alt="Sambar Rice"
+                >
+
+            </div>
+
+
+            <div class="food-content">
+
+                <span class="tag">
+                    VEG
+                </span>
+
+                <h3>
+                    Sambar Rice
+                </h3>
+
+                <p>
+                    Delicious rice mixed with authentic
+                    sambar and South Indian spices.
+                </p>
+
+
+                <div class="food-bottom">
+
+                    <strong>
+                        ₹139
+                    </strong>
+
+                    <button
+                        class="add-cart"
+                        data-name="Sambar Rice"
+                        data-price="139"
+                    >
+                        Add to Cart
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- FOOD 8 -->
+
+        <div
+            class="food-card"
+            data-category="special"
+            data-name="Ven Pongal"
+        >
+
+            <div class="food-image">
+
+                <img
+                    src="https://www.indianhealthyrecipes.com/wp-content/uploads/2021/01/pongal-ven-pongal.jpg"
+                    alt="Ven Pongal"
+                >
+
+            </div>
+
+
+            <div class="food-content">
+
+                <span class="tag bestseller">
+                    SPECIAL
+                </span>
+
+                <h3>
+                    Ven Pongal
+                </h3>
+
+                <p>
+                    Traditional rice and lentil dish cooked
+                    with aromatic spices and ghee.
+                </p>
+
+
+                <div class="food-bottom">
+
+                    <strong>
+                        ₹129
+                    </strong>
+
+                    <button
+                        class="add-cart"
+                        data-name="Ven Pongal"
+                        data-price="129"
+                    >
+                        Add to Cart
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- FOOD 9 -->
+
+        <div
+            class="food-card"
+            data-category="dosa"
+            data-name="Cheese Dosa"
+        >
+
+            <div class="food-image">
+
+                <img
+                    src="https://tse2.mm.bing.net/th/id/OIP.GejR9EkTXTTB42yyFqgi9wHaEK?r=0&rs=1&pid=ImgDetMain&o=7&rm=3"
+                    alt="Cheese Dosa"
+                >
+
+            </div>
+
+
+            <div class="food-content">
+
+                <span class="tag">
+                    VEG
+                </span>
+
+                <h3>
+                    Cheese Dosa
+                </h3>
+
+                <p>
+                    Crispy dosa loaded with melted cheese
+                    and delicious spicy masala.
+                </p>
+
+
+                <div class="food-bottom">
+
+                    <strong>
+                        ₹179
+                    </strong>
+
+                    <button
+                        class="add-cart"
+                        data-name="Cheese Dosa"
+                        data-price="179"
+                    >
+                        Add to Cart
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- FOOD 10 -->
+
+        <div
+            class="food-card"
+            data-category="idli"
+            data-name="Fried Idli"
+        >
+
+            <div class="food-image">
+
+                <img
+                    src="https://tse1.mm.bing.net/th/id/OIP.gNcTSiiMGpJl15AE45pKRQHaFq?r=0&rs=1&pid=ImgDetMain&o=7&rm=3"
+                    alt="Fried Idli"
+                >
+
+            </div>
+
+
+            <div class="food-content">
+
+                <span class="tag">
+                    POPULAR
+                </span>
+
+                <h3>
+                    Fried Idli
+                </h3>
+
+                <p>
+                    Crispy fried idli tossed with vegetables
+                    and special South Indian masala.
+                </p>
+
+
+                <div class="food-bottom">
+
+                    <strong>
+                        ₹129
+                    </strong>
+
+                    <button
+                        class="add-cart"
+                        data-name="Fried Idli"
+                        data-price="129"
+                    >
+                        Add to Cart
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- FOOD 11 -->
+
+        <div
+            class="food-card"
+            data-category="vada"
+            data-name="Sambar Vada"
+        >
+
+            <div class="food-image">
+
+                <img
+                    src="https://tse2.mm.bing.net/th/id/OIP.0Cb0Bkyn-lq9QQFWMc3xuQHaFj?r=0&rs=1&pid=ImgDetMain&o=7&rm=3"
+                    alt="Sambar Vada"
+                >
+
+            </div>
+
+
+            <div class="food-content">
+
+                <span class="tag">
+                    VEG
+                </span>
+
+                <h3>
+                    Sambar Vada
+                </h3>
+
+                <p>
+                    Soft crispy vada soaked in flavorful
+                    hot sambar with fresh herbs.
+                </p>
+
+
+                <div class="food-bottom">
+
+                    <strong>
+                        ₹139
+                    </strong>
+
+                    <button
+                        class="add-cart"
+                        data-name="Sambar Vada"
+                        data-price="139"
+                    >
+                        Add to Cart
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- FOOD 12 -->
+
+        <div
+            class="food-card"
+            data-category="dessert"
+            data-name="Kesari Halwa"
+        >
+
+            <div class="food-image">
+
+                <img
+                    src="https://th.bing.com/th/id/OIP.1nUL28ZKPJkWZj596UFqzgHaNK?r=0&o=7rm=3&rs=1&pid=ImgDetMain&o=7&rm=3"
+                    alt="Kesari Halwa"
+                >
+
+            </div>
+
+
+            <div class="food-content">
+
+                <span class="tag">
+                    SWEET
+                </span>
+
+                <h3>
+                    Kesari Halwa
+                </h3>
+
+                <p>
+                    Delicious South Indian sweet made with
+                    semolina, ghee and dry fruits.
+                </p>
+
+
+                <div class="food-bottom">
+
+                    <strong>
+                        ₹99
+                    </strong>
+
+                    <button
+                        class="add-cart"
+                        data-name="Kesari Halwa"
+                        data-price="99"
+                    >
+                        Add to Cart
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+</section>
+
+
+
+<!-- ================= CART ================= -->
+
+<div
+    class="cart-overlay"
+    id="cartOverlay"
+>
+
+    <div class="cart-box">
+
+        <button
+            class="close-cart"
+            id="closeCart"
+        >
+            ×
+        </button>
+
+
+        <h2>
+            Your Cart 🛒
+        </h2>
+
+
+        <div id="cartItems">
+
+            <p class="empty-cart">
+                Your cart is empty.
+            </p>
+
+        </div>
+
+
+        <div class="cart-total">
+
+            <span>
+                Total
+            </span>
+
+            <strong id="cartTotal">
+                ₹0
+            </strong>
+
+        </div>
+
+
+        <button
+            class="checkout-btn"
+            id="checkoutBtn"
+        >
+            Checkout
+        </button>
+
+    </div>
+
+</div>
+
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+
+    <div class="footer-logo">
+        Urban <span>Tadka</span>
+    </div>
+
+    <p>
+        Taste the world, one plate at a time.
+    </p>
+
+    <small>
+        © 2026 Urban Tadka. All Rights Reserved.
+    </small>
+
+</footer>
+
+
+
+<script src="south-indian.js"></script>
+
+</body>
+</html>

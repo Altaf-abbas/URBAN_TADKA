@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Urban Tadka | 3D Restaurant</title>
+
+    <link
+        rel="stylesheet"
+        href="style.css"
+    >
+
+</head>
+
+
+<body>
+
+
+    <!-- =====================================
+         NAVBAR
+    ====================================== -->
+
+    <header class="navbar">
+
+
+        <a
+            href="index.html"
+            class="logo"
+        >
+            <span>Urban</span> Tadka
+        </a>
+
+
+        <nav
+            class="nav-links"
+            id="navLinks"
+        >
+            <!-- JavaScript automatically adds links -->
+        </nav>
+
+
+        <div class="nav-actions">
+
+
+            <!-- SEARCH -->
+
+            <div class="search-box">
+
+                <input
+                    type="text"
+                    id="searchInput"
+                    placeholder="Search food..."
+                    autocomplete="off"
+                >
+
+                <button id="searchBtn">
+                    ⌕
+                </button>
+
+            </div>
+
+
+            <!-- CART -->
+
+            <button
+                class="cart-btn"
+                id="cartBtn"
+            >
+
+                🛒
+
+                <span id="cartCount">
+                    0
+                </span>
+
+            </button>
+
+
+        </div>
+
+    </header>
+
+
+
+    <!-- =====================================
+         HERO
+    ====================================== -->
+
+    <section class="hero">
+
+
+        <div class="hero-content">
+
+
+            <p class="hero-small">
+                WELCOME TO
+            </p>
+
+
+            <h1>
+                Urban <span>Tadka</span>
+            </h1>
+
+
+            <p class="hero-text">
+                A world of flavors, served with style.
+            </p>
+
+
+            <div class="hero-buttons">
+
+
+                <a
+                    href="#cuisines"
+                    class="primary-btn"
+                >
+                    Explore Food
+                </a>
+
+
+                <a
+                    href="indian.html"
+                    class="secondary-btn"
+                >
+                    Order Now
+                </a>
+
+
+            </div>
+
+
+        </div>
+
+
+
+        <!-- 3D FOOD -->
+
+        <div class="hero-food">
+
+
+            <div class="food-circle"></div>
+
+
+            <div class="floating-food food-one">
+                🍛
+            </div>
+
+
+            <div class="floating-food food-two">
+                🍕
+            </div>
+
+
+            <div class="floating-food food-three">
+                🍜
+            </div>
+
+
+            <div class="main-food">
+                🍲
+            </div>
+
+
+        </div>
+
+
+    </section>
+
+
+
+    <!-- =====================================
+         CUISINES
+    ====================================== -->
+
+    <section
+        class="cuisines"
+        id="cuisines"
+    >
+
+
+        <div class="section-heading">
+
+
+            <p>
+                DISCOVER
+            </p>
+
+
+            <h2>
+                Choose Your Cuisine
+            </h2>
+
+
+            <span>
+                Explore delicious food from around the world
+            </span>
+
+
+        </div>
+
+
+
+        <!-- Cards automatically generated -->
+
+        <div
+            class="cuisine-grid"
+            id="cuisineGrid"
+        >
+        </div>
+
+
+    </section>
+
+
+
+    <!-- =====================================
+         SEARCH RESULTS
+    ====================================== -->
+
+    <section
+        class="search-results"
+        id="searchResults"
+    >
+
+
+        <div class="section-heading">
+
+
+            <p>
+                SEARCH
+            </p>
+
+
+            <h2>
+                Search Results
+            </h2>
+
+
+            <span id="searchText">
+            </span>
+
+
+        </div>
+
+
+        <div
+            class="search-grid"
+            id="searchGrid"
+        >
+        </div>
+
+
+    </section>
+
+
+
+    <!-- =====================================
+         TODAY SPECIAL
+    ====================================== -->
+
+    <section class="special">
+
+
+        <div class="special-text">
+
+
+            <p>
+                TODAY'S SPECIAL
+            </p>
+
+
+            <h2>
+                Taste Something Amazing
+            </h2>
+
+
+            <span>
+                Fresh ingredients, bold flavours and
+                unforgettable taste.
+            </span>
+
+
+            <a href="indian.html">
+                View Special Menu →
+            </a>
+
+
+        </div>
+
+
+        <div class="special-food">
+            🍛
+        </div>
+
+
+    </section>
+
+
+
+    <!-- =====================================
+         CART
+    ====================================== -->
+
+    <div
+        class="cart-overlay"
+        id="cartOverlay"
+    >
+
+
+        <div class="cart-box">
+
+
+            <button
+                class="close-cart"
+                id="closeCart"
+            >
+                ×
+            </button>
+
+
+            <h2>
+                Your Cart 🛒
+            </h2>
+
+
+            <div id="cartItems">
+
+
+                <p class="empty-cart">
+                    Your cart is empty.
+                </p>
+
+
+            </div>
+
+
+            <div class="cart-total">
+
+
+                <span>
+                    Total
+                </span>
+
+
+                <strong id="cartTotal">
+                    ₹0
+                </strong>
+
+
+            </div>
+
+
+            <button
+                class="checkout-btn"
+                id="checkoutBtn"
+            >
+                Checkout
+            </button>
+
+
+        </div>
+
+
+    </div>
+
+
+
+    <!-- =====================================
+         FOOTER
+    ====================================== -->
+
+    <footer>
+
+
+        <div class="footer-logo">
+
+            Urban
+            <span>Tadka</span>
+
+        </div>
+
+
+        <p>
+            Taste the world, one plate at a time.
+        </p>
+
+
+        <small>
+            © 2026 Urban Tadka. All Rights Reserved.
+        </small>
+
+
+    </footer>
+
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

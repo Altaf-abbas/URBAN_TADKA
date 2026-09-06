@@ -1,0 +1,1187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Italian Food | Urban Tadka</title>
+
+    <link rel="stylesheet" href="italian.css">
+</head>
+
+<body>
+
+
+<!-- ================= NAVBAR ================= -->
+
+<header class="navbar">
+
+    <a href="index.html" class="logo">
+        <span>Urban</span> Tadka
+    </a>
+
+    <nav class="nav-links">
+
+        <a href="index.html">Home</a>
+
+        <a href="indian.html">Indian</a>
+
+        <a href="chinese.html">Chinese</a>
+
+        <a href="italian.html" class="active">
+            Italian
+        </a>
+
+        <a href="south-indian.html">
+            South Indian
+        </a>
+
+        <a href="fast-food.html">
+            Fast Food
+        </a>
+
+        <a href="desserts.html">
+            Desserts
+        </a>
+
+    </nav>
+
+
+    <div class="nav-right">
+
+        <div class="search-box">
+
+            <input
+                type="text"
+                id="searchInput"
+                placeholder="Search Italian food..."
+            >
+
+            <button id="searchBtn">
+                🔍
+            </button>
+
+        </div>
+
+
+        <button
+            class="cart-button"
+            id="cartButton"
+        >
+            🛒
+            <span id="cartCount">0</span>
+        </button>
+
+    </div>
+
+</header>
+
+
+
+<!-- ================= HERO ================= -->
+
+<section class="hero">
+
+    <div class="hero-content">
+
+        <div class="hero-emoji">
+            🇮🇹
+        </div>
+
+        <p>
+            WELCOME TO URBAN TADKA
+        </p>
+
+        <h1>
+            Italian Cuisine
+        </h1>
+
+        <span>
+            Delicious Italian flavours,
+            cheesy pizzas, creamy pasta and more.
+        </span>
+
+    </div>
+
+</section>
+
+
+
+<!-- ================= MENU ================= -->
+
+<section class="menu-section">
+
+    <div class="heading">
+
+        <p>
+            EXPLORE ITALIAN FOOD
+        </p>
+
+        <h2>
+            Italian Menu
+        </h2>
+
+        <span>
+            Taste the delicious flavours of Italy
+        </span>
+
+    </div>
+
+
+
+    <!-- ================= CATEGORIES ================= -->
+
+    <div class="categories">
+
+        <button
+            class="category active"
+            data-category="all"
+        >
+            All
+        </button>
+
+        <button
+            class="category"
+            data-category="pizza"
+        >
+            Pizza
+        </button>
+
+        <button
+            class="category"
+            data-category="pasta"
+        >
+            Pasta
+        </button>
+
+        <button
+            class="category"
+            data-category="starter"
+        >
+            Starters
+        </button>
+
+        <button
+            class="category"
+            data-category="main"
+        >
+            Main Course
+        </button>
+
+        <button
+            class="category"
+            data-category="salad"
+        >
+            Salads
+        </button>
+
+        <button
+            class="category"
+            data-category="dessert"
+        >
+            Desserts
+        </button>
+
+        <button
+            class="category"
+            data-category="drinks"
+        >
+            Drinks
+        </button>
+
+    </div>
+
+
+
+    <!-- ================= FOOD GRID ================= -->
+
+    <div
+        class="food-grid"
+        id="foodGrid"
+    >
+
+
+        <!-- FOOD 1 -->
+
+        <div
+            class="food-card"
+            data-category="pizza"
+            data-name="Margherita Pizza"
+        >
+
+            <div class="food-image">
+
+                <!-- APNI IMAGE YAHAN LAGAO -->
+
+                <img
+                    src="https://www.onceuponachef.com/images/2020/06/Margherita-Pizza-scaled.jpg"
+                    alt="Margherita Pizza"
+                >
+
+            </div>
+
+
+            <div class="food-content">
+
+                <span class="tag">
+                    VEG
+                </span>
+
+                <h3>
+                    Margherita Pizza
+                </h3>
+
+                <p>
+                    Classic pizza with tomato,
+                    mozzarella and fresh basil.
+                </p>
+
+
+                <div class="food-bottom">
+
+                    <strong>
+                        ₹249
+                    </strong>
+
+                    <button
+                        class="add-cart"
+                        data-name="Margherita Pizza"
+                        data-price="249"
+                    >
+                        Add to Cart
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- FOOD 2 -->
+
+        <div
+            class="food-card"
+            data-category="pizza"
+            data-name="Farmhouse Pizza"
+        >
+
+            <div class="food-image">
+
+                <img
+                    src="https://static.vecteezy.com/system/resources/previews/048/638/113/large_2x/rustic-style-pizza-with-mixed-toppings-on-white-farmhouse-table-deep-brown-background-background-free-photo.jpg"
+                    alt="Farmhouse Pizza"
+                >
+
+            </div>
+
+
+            <div class="food-content">
+
+                <span class="tag bestseller">
+                    BESTSELLER
+                </span>
+
+                <h3>
+                    Farmhouse Pizza
+                </h3>
+
+                <p>
+                    Loaded with fresh vegetables,
+                    cheese and delicious herbs.
+                </p>
+
+
+                <div class="food-bottom">
+
+                    <strong>
+                        ₹329
+                    </strong>
+
+                    <button
+                        class="add-cart"
+                        data-name="Farmhouse Pizza"
+                        data-price="329"
+                    >
+                        Add to Cart
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- FOOD 3 -->
+
+        <div
+            class="food-card"
+            data-category="pizza"
+            data-name="Chicken Pizza"
+        >
+
+            <div class="food-image">
+
+                <img
+                    src="https://tse4.mm.bing.net/th/id/OIP.PuZPTYQcO1k0reUhzvDueAHaLH?r=0&w=1400&h=2100&rs=1&pid=ImgDetMain&o=7&rm=3"
+                    alt="Chicken Pizza"
+                >
+
+            </div>
+
+
+            <div class="food-content">
+
+                <span class="tag nonveg">
+                    NON-VEG
+                </span>
+
+                <h3>
+                    Chicken Pizza
+                </h3>
+
+                <p>
+                    Cheesy pizza topped with
+                    juicy chicken and herbs.
+                </p>
+
+
+                <div class="food-bottom">
+
+                    <strong>
+                        ₹349
+                    </strong>
+
+                    <button
+                        class="add-cart"
+                        data-name="Chicken Pizza"
+                        data-price="349"
+                    >
+                        Add to Cart
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- FOOD 4 -->
+
+        <div
+            class="food-card"
+            data-category="pasta"
+            data-name="Penne Arrabbiata"
+        >
+
+            <div class="food-image">
+
+                <img
+                    src="https://th.bing.com/th/id/OIP.SSHK0WYnMmtmPLF6RaDofgHaLH?r=0&o=7rm=3&rs=1&pid=ImgDetMain&o=7&rm=3"
+                    alt="Penne Arrabbiata"
+                >
+
+            </div>
+
+
+            <div class="food-content">
+
+                <span class="tag spicy">
+                    SPICY
+                </span>
+
+                <h3>
+                    Penne Arrabbiata
+                </h3>
+
+                <p>
+                    Penne pasta cooked in
+                    spicy tomato sauce.
+                </p>
+
+
+                <div class="food-bottom">
+
+                    <strong>
+                        ₹229
+                    </strong>
+
+                    <button
+                        class="add-cart"
+                        data-name="Penne Arrabbiata"
+                        data-price="229"
+                    >
+                        Add to Cart
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- FOOD 5 -->
+
+        <div
+            class="food-card"
+            data-category="pasta"
+            data-name="White Sauce Pasta"
+        >
+
+            <div class="food-image">
+
+                <img
+                    src="https://www.sharmispassions.com/wp-content/uploads/2020/03/WhiteSaucePasta6.jpg"
+                    alt="White Sauce Pasta"
+                >
+
+            </div>
+
+
+            <div class="food-content">
+
+                <span class="tag bestseller">
+                    POPULAR
+                </span>
+
+                <h3>
+                    White Sauce Pasta
+                </h3>
+
+                <p>
+                    Creamy pasta with herbs,
+                    cheese and white sauce.
+                </p>
+
+
+                <div class="food-bottom">
+
+                    <strong>
+                        ₹249
+                    </strong>
+
+                    <button
+                        class="add-cart"
+                        data-name="White Sauce Pasta"
+                        data-price="249"
+                    >
+                        Add to Cart
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- FOOD 6 -->
+
+        <div
+            class="food-card"
+            data-category="pasta"
+            data-name="Pesto Pasta"
+        >
+
+            <div class="food-image">
+
+                <img
+                    src="https://richanddelish.com/wp-content/uploads/2023/02/creamy-pesto-pasta-9-of-15.jpg"
+                    alt="Pesto Pasta"
+                >
+
+            </div>
+
+
+            <div class="food-content">
+
+                <span class="tag">
+                    VEG
+                </span>
+
+                <h3>
+                    Pesto Pasta
+                </h3>
+
+                <p>
+                    Pasta tossed with fresh
+                    basil pesto and cheese.
+                </p>
+
+
+                <div class="food-bottom">
+
+                    <strong>
+                        ₹269
+                    </strong>
+
+                    <button
+                        class="add-cart"
+                        data-name="Pesto Pasta"
+                        data-price="269"
+                    >
+                        Add to Cart
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- FOOD 7 -->
+
+        <div
+            class="food-card"
+            data-category="starter"
+            data-name="Garlic Bread"
+        >
+
+            <div class="food-image">
+
+                <img
+                    src="https://th.bing.com/th/id/R.174b2937accac8fbac5de3ea84a270c7?rik=TFEiuSoiA72obQ&riu=http%3a%2f%2fwickedfood.co.za%2fwp-content%2fuploads%2f2009%2f09%2fGarlic-Bread_9.jpg&ehk=QlERgLksNMM51L0mTWwxY5cDHgFCIPjHLvl9gPOtnp8%3d&risl=&pid=ImgRaw&r=0"
+                    alt="Garlic Bread"
+                >
+
+            </div>
+
+
+            <div class="food-content">
+
+                <span class="tag">
+                    VEG
+                </span>
+
+                <h3>
+                    Garlic Bread
+                </h3>
+
+                <p>
+                    Crispy bread topped with
+                    garlic butter and herbs.
+                </p>
+
+
+                <div class="food-bottom">
+
+                    <strong>
+                        ₹149
+                    </strong>
+
+                    <button
+                        class="add-cart"
+                        data-name="Garlic Bread"
+                        data-price="149"
+                    >
+                        Add to Cart
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- FOOD 8 -->
+
+        <div
+            class="food-card"
+            data-category="starter"
+            data-name="Bruschetta"
+        >
+
+            <div class="food-image">
+
+                <img
+                    src="https://th.bing.com/th/id/OIP.IpdJy9EBGFkJrSb__Wkb1AHaHa?w=186&h=186&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3"
+                    alt="Bruschetta"
+                >
+
+            </div>
+
+
+            <div class="food-content">
+
+                <span class="tag">
+                    VEG
+                </span>
+
+                <h3>
+                    Bruschetta
+                </h3>
+
+                <p>
+                    Toasted bread topped with
+                    tomatoes, herbs and olive oil.
+                </p>
+
+
+                <div class="food-bottom">
+
+                    <strong>
+                        ₹179
+                    </strong>
+
+                    <button
+                        class="add-cart"
+                        data-name="Bruschetta"
+                        data-price="179"
+                    >
+                        Add to Cart
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- FOOD 9 -->
+
+        <div
+            class="food-card"
+            data-category="main"
+            data-name="Lasagna"
+        >
+
+            <div class="food-image">
+
+                <img
+                    src="https://www.thespruceeats.com/thmb/Lm5HsN9T6Z9DHJ0Qca4w_n-VDAg=/2811x1874/filters:no_upscale():max_bytes(150000):strip_icc()/Step_1_Basic_Lasagna_with_Meaty_Sauce-5a99f20ec67335003717d34b.jpg"
+                    alt="Lasagna"
+                >
+
+            </div>
+
+
+            <div class="food-content">
+
+                <span class="tag bestseller">
+                    SPECIAL
+                </span>
+
+                <h3>
+                    Lasagna
+                </h3>
+
+                <p>
+                    Layers of pasta, cheese,
+                    tomato sauce and herbs.
+                </p>
+
+
+                <div class="food-bottom">
+
+                    <strong>
+                        ₹329
+                    </strong>
+
+                    <button
+                        class="add-cart"
+                        data-name="Lasagna"
+                        data-price="329"
+                    >
+                        Add to Cart
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- FOOD 10 -->
+
+        <div
+            class="food-card"
+            data-category="main"
+            data-name="Risotto"
+        >
+
+            <div class="food-image">
+
+                <img
+                    src="https://tse1.mm.bing.net/th/id/OIP.IrCpbVVrPy6VzPw8FFnDagHaHa?r=0&rs=1&pid=ImgDetMain&o=7&rm=3"
+                    alt="Risotto"
+                >
+
+            </div>
+
+
+            <div class="food-content">
+
+                <span class="tag">
+                    VEG
+                </span>
+
+                <h3>
+                    Creamy Risotto
+                </h3>
+
+                <p>
+                    Creamy Italian rice cooked
+                    with herbs and cheese.
+                </p>
+
+
+                <div class="food-bottom">
+
+                    <strong>
+                        ₹289
+                    </strong>
+
+                    <button
+                        class="add-cart"
+                        data-name="Creamy Risotto"
+                        data-price="289"
+                    >
+                        Add to Cart
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- FOOD 11 -->
+
+        <div
+            class="food-card"
+            data-category="salad"
+            data-name="Italian Salad"
+        >
+
+            <div class="food-image">
+
+                <img
+                    src="https://www.spendwithpennies.com/wp-content/uploads/2019/02/Italian-Salad-SpendWithPennies-1.jpg"
+                    alt="Italian Salad"
+                >
+
+            </div>
+
+
+            <div class="food-content">
+
+                <span class="tag">
+                    HEALTHY
+                </span>
+
+                <h3>
+                    Italian Salad
+                </h3>
+
+                <p>
+                    Fresh vegetables with
+                    herbs and olive oil.
+                </p>
+
+
+                <div class="food-bottom">
+
+                    <strong>
+                        ₹179
+                    </strong>
+
+                    <button
+                        class="add-cart"
+                        data-name="Italian Salad"
+                        data-price="179"
+                    >
+                        Add to Cart
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- FOOD 12 -->
+
+        <div
+            class="food-card"
+            data-category="salad"
+            data-name="Caprese Salad"
+        >
+
+            <div class="food-image">
+
+                <img
+                    src="https://tse4.mm.bing.net/th/id/OIP.GNTRmi_CFqthUcFriLoh1AHaLH?r=0&rs=1&pid=ImgDetMain&o=7&rm=3"
+                    alt="Caprese Salad"
+                >
+
+            </div>
+
+
+            <div class="food-content">
+
+                <span class="tag">
+                    VEG
+                </span>
+
+                <h3>
+                    Caprese Salad
+                </h3>
+
+                <p>
+                    Fresh tomatoes, mozzarella
+                    and basil with olive oil.
+                </p>
+
+
+                <div class="food-bottom">
+
+                    <strong>
+                        ₹219
+                    </strong>
+
+                    <button
+                        class="add-cart"
+                        data-name="Caprese Salad"
+                        data-price="219"
+                    >
+                        Add to Cart
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- FOOD 13 -->
+
+        <div
+            class="food-card"
+            data-category="dessert"
+            data-name="Tiramisu"
+        >
+
+            <div class="food-image">
+
+                <img
+                    src="https://tse2.mm.bing.net/th/id/OIP.3OkSTUyd5Puj_lLX-3aJdQHaHa?r=0&rs=1&pid=ImgDetMain&o=7&rm=3"
+                    alt="Tiramisu"
+                >
+
+            </div>
+
+
+            <div class="food-content">
+
+                <span class="tag bestseller">
+                    POPULAR
+                </span>
+
+                <h3>
+                    Tiramisu
+                </h3>
+
+                <p>
+                    Classic Italian dessert
+                    with coffee and cream.
+                </p>
+
+
+                <div class="food-bottom">
+
+                    <strong>
+                        ₹229
+                    </strong>
+
+                    <button
+                        class="add-cart"
+                        data-name="Tiramisu"
+                        data-price="229"
+                    >
+                        Add to Cart
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- FOOD 14 -->
+
+        <div
+            class="food-card"
+            data-category="dessert"
+            data-name="Panna Cotta"
+        >
+
+            <div class="food-image">
+
+                <img
+                    src="https://www.recipetineats.com/tachyon/2025/09/Panna-cotta_8-close-up.jpg?resize=1200%2C1500&zoom=1"
+                    alt="Panna Cotta"
+                >
+
+            </div>
+
+
+            <div class="food-content">
+
+                <span class="tag">
+                    SWEET
+                </span>
+
+                <h3>
+                    Panna Cotta
+                </h3>
+
+                <p>
+                    Smooth and creamy Italian
+                    dessert with fresh topping.
+                </p>
+
+
+                <div class="food-bottom">
+
+                    <strong>
+                        ₹199
+                    </strong>
+
+                    <button
+                        class="add-cart"
+                        data-name="Panna Cotta"
+                        data-price="199"
+                    >
+                        Add to Cart
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- FOOD 15 -->
+
+        <div
+            class="food-card"
+            data-category="drinks"
+            data-name="Italian Lemon Soda"
+        >
+
+            <div class="food-image">
+
+                <img
+                    src="https://tse1.mm.bing.net/th/id/OIP.KaZoP45MvxfyHgSpCebdIAHaHa?r=0&rs=1&pid=ImgDetMain&o=7&rm=3"
+                    alt="Italian Lemon Soda"
+                >
+
+            </div>
+
+
+            <div class="food-content">
+
+                <span class="tag">
+                    DRINK
+                </span>
+
+                <h3>
+                    Italian Lemon Soda
+                </h3>
+
+                <p>
+                    Refreshing lemon drink
+                    with a sparkling twist.
+                </p>
+
+
+                <div class="food-bottom">
+
+                    <strong>
+                        ₹99
+                    </strong>
+
+                    <button
+                        class="add-cart"
+                        data-name="Italian Lemon Soda"
+                        data-price="99"
+                    >
+                        Add to Cart
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- FOOD 16 -->
+
+        <div
+            class="food-card"
+            data-category="drinks"
+            data-name="Iced Coffee"
+        >
+
+            <div class="food-image">
+
+                <img
+                    src="https://th.bing.com/th/id/OIP.HFt6aACmmt-oQTh6LMgxSQHaHa?r=0&o=7rm=3&rs=1&pid=ImgDetMain&o=7&rm=3"
+                    alt="Iced Coffee"
+                >
+
+            </div>
+
+
+            <div class="food-content">
+
+                <span class="tag">
+                    DRINK
+                </span>
+
+                <h3>
+                    Iced Coffee
+                </h3>
+
+                <p>
+                    Chilled creamy coffee
+                    served with ice.
+                </p>
+
+
+                <div class="food-bottom">
+
+                    <strong>
+                        ₹129
+                    </strong>
+
+                    <button
+                        class="add-cart"
+                        data-name="Iced Coffee"
+                        data-price="129"
+                    >
+                        Add to Cart
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+</section>
+
+
+
+<!-- ================= CART ================= -->
+
+<div
+    class="cart-overlay"
+    id="cartOverlay"
+>
+
+    <div class="cart-box">
+
+        <button
+            class="close-cart"
+            id="closeCart"
+        >
+            ×
+        </button>
+
+
+        <h2>
+            Your Cart 🛒
+        </h2>
+
+
+        <div id="cartItems">
+
+            <p class="empty-cart">
+                Your cart is empty.
+            </p>
+
+        </div>
+
+
+        <div class="cart-total">
+
+            <span>
+                Total
+            </span>
+
+            <strong id="cartTotal">
+                ₹0
+            </strong>
+
+        </div>
+
+
+        <button
+            class="checkout-btn"
+            id="checkoutBtn"
+        >
+            Checkout
+        </button>
+
+    </div>
+
+</div>
+
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+
+    <div class="footer-logo">
+        Urban <span>Tadka</span>
+    </div>
+
+    <p>
+        Taste the world, one plate at a time.
+    </p>
+
+    <small>
+        © 2026 Urban Tadka. All Rights Reserved.
+    </small>
+
+</footer>
+
+
+<script src="italian.js"></script>
+
+</body>
+</html>

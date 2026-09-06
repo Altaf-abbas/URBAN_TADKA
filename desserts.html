@@ -1,0 +1,825 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Desserts | Urban Tadka</title>
+
+    <link rel="stylesheet" href="desserts.css">
+</head>
+
+<body>
+
+    <!-- ================= NAVBAR ================= -->
+
+    <header class="navbar">
+
+        <a href="index.html" class="logo">
+            <span>Urban</span> Tadka
+        </a>
+
+        <nav class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="indian.html">Indian</a>
+            <a href="chinese.html">Chinese</a>
+            <a href="italian.html">Italian</a>
+            <a href="south-indian.html">South Indian</a>
+            <a href="fast-food.html">Fast Food</a>
+            <a href="desserts.html" class="active">Desserts</a>
+        </nav>
+
+        <div class="nav-right">
+
+            <div class="search-box">
+                <input
+                    type="text"
+                    id="searchInput"
+                    placeholder="Search dessert..."
+                >
+
+                <button id="searchBtn">
+                    🔍
+                </button>
+            </div>
+
+            <button class="cart-button" id="cartButton">
+                🛒
+                <span id="cartCount">0</span>
+            </button>
+
+        </div>
+
+    </header>
+
+
+    <!-- ================= HERO ================= -->
+
+    <section class="hero">
+
+        <div class="hero-content">
+
+            <div class="hero-emoji">
+                🍰
+            </div>
+
+            <p>WELCOME TO URBAN TADKA</p>
+
+            <h1>Desserts</h1>
+
+            <span>
+                Sweet treats, creamy delights and delicious desserts.
+            </span>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= MENU ================= -->
+
+    <section class="menu-section">
+
+        <div class="heading">
+
+            <p>EXPLORE DESSERTS</p>
+
+            <h2>Desserts Menu</h2>
+
+            <span>
+                Choose your favourite sweet treat
+            </span>
+
+        </div>
+
+
+        <!-- ================= CATEGORIES ================= -->
+
+        <div class="categories">
+
+            <button class="category active" data-category="all">
+                All
+            </button>
+
+            <button class="category" data-category="cake">
+                Cakes
+            </button>
+
+            <button class="category" data-category="icecream">
+                Ice Cream
+            </button>
+
+            <button class="category" data-category="indian">
+                Indian Sweets
+            </button>
+
+            <button class="category" data-category="chocolate">
+                Chocolate
+            </button>
+
+            <button class="category" data-category="pudding">
+                Pudding
+            </button>
+
+        </div>
+
+
+        <!-- ================= FOOD GRID ================= -->
+
+        <div class="food-grid" id="foodGrid">
+
+
+            <!-- 1. GULAB JAMUN -->
+
+            <div
+                class="food-card"
+                data-category="indian"
+                data-name="Gulab Jamun"
+            >
+
+                <div class="food-image">
+
+                    <img
+                        src="https://tse1.mm.bing.net/th/id/OIP.4R6AfffnuWlGI5GFoK_AagHaLH?r=0&w=740&h=1110&rs=1&pid=ImgDetMain&o=7&rm=3"
+                        alt="Gulab Jamun"
+                    >
+
+                </div>
+
+                <div class="food-content">
+
+                    <span class="tag bestseller">
+                        BESTSELLER
+                    </span>
+
+                    <h3>
+                        Gulab Jamun
+                    </h3>
+
+                    <p>
+                        Soft and juicy gulab jamuns
+                        soaked in sweet sugar syrup.
+                    </p>
+
+                    <div class="food-bottom">
+
+                        <strong>₹99</strong>
+
+                        <button
+                            class="add-cart"
+                            data-name="Gulab Jamun"
+                            data-price="99"
+                        >
+                            Add to Cart
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- 2. RASMALAI -->
+
+            <div
+                class="food-card"
+                data-category="indian"
+                data-name="Rasmalai"
+            >
+
+                <div class="food-image">
+
+                    <img
+                        src="https://cdnnew.igp.com/f_auto,q_auto,t_pnopt12prodlp/products/p-exquisite-rasmalai-mini-cake-300-gm--266941-m.jpg"
+                        alt="Rasmalai"
+                    >
+
+                </div>
+
+                <div class="food-content">
+
+                    <span class="tag">
+                        POPULAR
+                    </span>
+
+                    <h3>
+                        Rasmalai
+                    </h3>
+
+                    <p>
+                        Soft rasmalai served in
+                        chilled creamy milk.
+                    </p>
+
+                    <div class="food-bottom">
+
+                        <strong>₹129</strong>
+
+                        <button
+                            class="add-cart"
+                            data-name="Rasmalai"
+                            data-price="129"
+                        >
+                            Add to Cart
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- 3. CHOCOLATE CAKE -->
+
+            <div
+                class="food-card"
+                data-category="cake"
+                data-name="Chocolate Cake"
+            >
+
+                <div class="food-image">
+
+                    <img
+                        src="https://tse4.mm.bing.net/th/id/OIP.Yke1TWWqS7NN4LCZyJ8Z_gHaLG?r=0&w=1707&h=2560&rs=1&pid=ImgDetMain&o=7&rm=3"
+                        alt="Chocolate Cake"
+                    >
+
+                </div>
+
+                <div class="food-content">
+
+                    <span class="tag bestseller">
+                        BESTSELLER
+                    </span>
+
+                    <h3>
+                        Chocolate Cake
+                    </h3>
+
+                    <p>
+                        Soft chocolate cake topped
+                        with rich chocolate cream.
+                    </p>
+
+                    <div class="food-bottom">
+
+                        <strong>₹199</strong>
+
+                        <button
+                            class="add-cart"
+                            data-name="Chocolate Cake"
+                            data-price="199"
+                        >
+                            Add to Cart
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- 4. RED VELVET CAKE -->
+
+            <div
+                class="food-card"
+                data-category="cake"
+                data-name="Red Velvet Cake"
+            >
+
+                <div class="food-image">
+
+                    <img
+                        src="https://tse4.mm.bing.net/th/id/OIP.X33m2Ft3Q4yPO0z5k0tWCAHaLH?r=0&rs=1&pid=ImgDetMain&o=7&rm=3"
+                        alt="Red Velvet Cake"
+                    >
+
+                </div>
+
+                <div class="food-content">
+
+                    <span class="tag">
+                        POPULAR
+                    </span>
+
+                    <h3>
+                        Red Velvet Cake
+                    </h3>
+
+                    <p>
+                        Delicious red velvet cake
+                        with creamy frosting.
+                    </p>
+
+                    <div class="food-bottom">
+
+                        <strong>₹229</strong>
+
+                        <button
+                            class="add-cart"
+                            data-name="Red Velvet Cake"
+                            data-price="229"
+                        >
+                            Add to Cart
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- 5. VANILLA ICE CREAM -->
+
+            <div
+                class="food-card"
+                data-category="icecream"
+                data-name="Vanilla Ice Cream"
+            >
+
+                <div class="food-image">
+
+                    <img
+                        src="https://th.bing.com/th/id/OIP.8uSvDBzfoSGNccVlWpQADQHaJ4?r=0&o=7rm=3&rs=1&pid=ImgDetMain&o=7&rm=3"
+                        alt="Vanilla Ice Cream"
+                    >
+
+                </div>
+
+                <div class="food-content">
+
+                    <span class="tag">
+                        VEG
+                    </span>
+
+                    <h3>
+                        Vanilla Ice Cream
+                    </h3>
+
+                    <p>
+                        Smooth and creamy vanilla
+                        ice cream with rich flavour.
+                    </p>
+
+                    <div class="food-bottom">
+
+                        <strong>₹99</strong>
+
+                        <button
+                            class="add-cart"
+                            data-name="Vanilla Ice Cream"
+                            data-price="99"
+                        >
+                            Add to Cart
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- 6. CHOCOLATE ICE CREAM -->
+
+            <div
+                class="food-card"
+                data-category="icecream"
+                data-name="Chocolate Ice Cream"
+            >
+
+                <div class="food-image">
+
+                    <img
+                        src="https://tse2.mm.bing.net/th/id/OIP.-KS552SC6Fw90djWbpzuNwHaLL?r=0&rs=1&pid=ImgDetMain&o=7&rm=3"
+                        alt="Chocolate Ice Cream"
+                    >
+
+                </div>
+
+                <div class="food-content">
+
+                    <span class="tag bestseller">
+                        BESTSELLER
+                    </span>
+
+                    <h3>
+                        Chocolate Ice Cream
+                    </h3>
+
+                    <p>
+                        Rich and creamy chocolate
+                        ice cream.
+                    </p>
+
+                    <div class="food-bottom">
+
+                        <strong>₹109</strong>
+
+                        <button
+                            class="add-cart"
+                            data-name="Chocolate Ice Cream"
+                            data-price="109"
+                        >
+                            Add to Cart
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- 7. CHOCOLATE BROWNIE -->
+
+            <div
+                class="food-card"
+                data-category="chocolate"
+                data-name="Chocolate Brownie"
+            >
+
+                <div class="food-image">
+
+                    <img
+                        src="https://tse1.mm.bing.net/th/id/OIP.x8B1yKWzx25f_dZIJZxSTgHaLH?r=0&rs=1&pid=ImgDetMain&o=7&rm=3"
+                        alt="Chocolate Brownie"
+                    >
+
+                </div>
+
+                <div class="food-content">
+
+                    <span class="tag bestseller">
+                        BESTSELLER
+                    </span>
+
+                    <h3>
+                        Chocolate Brownie
+                    </h3>
+
+                    <p>
+                        Soft and fudgy brownie
+                        loaded with chocolate.
+                    </p>
+
+                    <div class="food-bottom">
+
+                        <strong>₹149</strong>
+
+                        <button
+                            class="add-cart"
+                            data-name="Chocolate Brownie"
+                            data-price="149"
+                        >
+                            Add to Cart
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- 8. CHOCO LAVA CAKE -->
+
+            <div
+                class="food-card"
+                data-category="chocolate"
+                data-name="Choco Lava Cake"
+            >
+
+                <div class="food-image">
+
+                    <img
+                        src="https://tse2.mm.bing.net/th/id/OIP.biKIPWswazr83pwrXICp7wHaHa?r=0&rs=1&pid=ImgDetMain&o=7&rm=3"
+                        alt="Choco Lava Cake"
+                    >
+
+                </div>
+
+                <div class="food-content">
+
+                    <span class="tag bestseller">
+                        SPECIAL
+                    </span>
+
+                    <h3>
+                        Choco Lava Cake
+                    </h3>
+
+                    <p>
+                        Warm chocolate cake filled
+                        with molten chocolate.
+                    </p>
+
+                    <div class="food-bottom">
+
+                        <strong>₹179</strong>
+
+                        <button
+                            class="add-cart"
+                            data-name="Choco Lava Cake"
+                            data-price="179"
+                        >
+                            Add to Cart
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- 9. CARAMEL PUDDING -->
+
+            <div
+                class="food-card"
+                data-category="pudding"
+                data-name="Caramel Pudding"
+            >
+
+                <div class="food-image">
+
+                    <img
+                        src="https://tse3.mm.bing.net/th/id/OIP.HSSGDGiyIzOpQc4nddFG4AHaHa?r=0&rs=1&pid=ImgDetMain&o=7&rm=3"
+                        alt="Caramel Pudding"
+                    >
+
+                </div>
+
+                <div class="food-content">
+
+                    <span class="tag">
+                        SWEET
+                    </span>
+
+                    <h3>
+                        Caramel Pudding
+                    </h3>
+
+                    <p>
+                        Smooth creamy pudding
+                        topped with caramel.
+                    </p>
+
+                    <div class="food-bottom">
+
+                        <strong>₹139</strong>
+
+                        <button
+                            class="add-cart"
+                            data-name="Caramel Pudding"
+                            data-price="139"
+                        >
+                            Add to Cart
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- 10. FRUIT CUSTARD -->
+
+            <div
+                class="food-card"
+                data-category="pudding"
+                data-name="Fruit Custard"
+            >
+
+                <div class="food-image">
+
+                    <img
+                        src="https://tse2.mm.bing.net/th/id/OIP.K5uP5XamGGpSwk1RWnkD3wHaJ4?r=0&rs=1&pid=ImgDetMain&o=7&rm=3"
+                        alt="Fruit Custard"
+                    >
+
+                </div>
+
+                <div class="food-content">
+
+                    <span class="tag">
+                        VEG
+                    </span>
+
+                    <h3>
+                        Fruit Custard
+                    </h3>
+
+                    <p>
+                        Creamy custard mixed with
+                        fresh seasonal fruits.
+                    </p>
+
+                    <div class="food-bottom">
+
+                        <strong>₹129</strong>
+
+                        <button
+                            class="add-cart"
+                            data-name="Fruit Custard"
+                            data-price="129"
+                        >
+                            Add to Cart
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- 11. BROWNIE WITH ICE CREAM -->
+
+            <div
+                class="food-card"
+                data-category="icecream"
+                data-name="Brownie With Ice Cream"
+            >
+
+                <div class="food-image">
+
+                    <img
+                        src="https://tse2.mm.bing.net/th/id/OIP._QHY_rXtexusHZdWfQCbMgHaE7?r=0&w=626&h=417&rs=1&pid=ImgDetMain&o=7&rm=3"
+                        alt="Brownie With Ice Cream"
+                    >
+
+                </div>
+
+                <div class="food-content">
+
+                    <span class="tag bestseller">
+                        SPECIAL
+                    </span>
+
+                    <h3>
+                        Brownie With Ice Cream
+                    </h3>
+
+                    <p>
+                        Warm brownie served with
+                        creamy vanilla ice cream.
+                    </p>
+
+                    <div class="food-bottom">
+
+                        <strong>₹199</strong>
+
+                        <button
+                            class="add-cart"
+                            data-name="Brownie With Ice Cream"
+                            data-price="199"
+                        >
+                            Add to Cart
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- 12. JALebi -->
+
+            <div
+                class="food-card"
+                data-category="indian"
+                data-name="Jalebi"
+            >
+
+                <div class="food-image">
+
+                    <img
+                        src="https://i.pinimg.com/originals/29/52/b2/2952b2a7a04f3ff8546116f9a8286cd7.jpg"
+                        alt="Jalebi"
+                    >
+
+                </div>
+
+                <div class="food-content">
+
+                    <span class="tag">
+                        POPULAR
+                    </span>
+
+                    <h3>
+                        Jalebi
+                    </h3>
+
+                    <p>
+                        Crispy and juicy jalebi
+                        dipped in sweet syrup.
+                    </p>
+
+                    <div class="food-bottom">
+
+                        <strong>₹99</strong>
+
+                        <button
+                            class="add-cart"
+                            data-name="Jalebi"
+                            data-price="99"
+                        >
+                            Add to Cart
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= CART ================= -->
+
+    <div
+        class="cart-overlay"
+        id="cartOverlay"
+    >
+
+        <div class="cart-box">
+
+            <button
+                class="close-cart"
+                id="closeCart"
+            >
+                ×
+            </button>
+
+            <h2>
+                Your Cart 🛒
+            </h2>
+
+            <div id="cartItems">
+
+                <p class="empty-cart">
+                    Your cart is empty.
+                </p>
+
+            </div>
+
+            <div class="cart-total">
+
+                <span>
+                    Total
+                </span>
+
+                <strong id="cartTotal">
+                    ₹0
+                </strong>
+
+            </div>
+
+            <button
+                class="checkout-btn"
+                id="checkoutBtn"
+            >
+                Checkout
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+
+        <div class="footer-logo">
+            Urban <span>Tadka</span>
+        </div>
+
+        <p>
+            Taste the world, one plate at a time.
+        </p>
+
+        <small>
+            © 2026 Urban Tadka. All Rights Reserved.
+        </small>
+
+    </footer>
+
+
+    <script src="desserts.js"></script>
+
+</body>
+
+</html>

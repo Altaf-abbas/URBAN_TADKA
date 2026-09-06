@@ -1,0 +1,1189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Chinese Food | Urban Tadka</title>
+
+    <link rel="stylesheet" href="chinese.css">
+</head>
+
+<body>
+
+
+<!-- ================= NAVBAR ================= -->
+
+<header class="navbar">
+
+    <a href="index.html" class="logo">
+        <span>Urban</span> Tadka
+    </a>
+
+    <nav class="nav-links">
+
+        <a href="index.html">Home</a>
+
+        <a href="indian.html">Indian</a>
+
+        <a href="chinese.html" class="active">
+            Chinese
+        </a>
+
+        <a href="italian.html">
+            Italian
+        </a>
+
+        <a href="south-indian.html">
+            South Indian
+        </a>
+
+        <a href="fast-food.html">
+            Fast Food
+        </a>
+
+        <a href="desserts.html">
+            Desserts
+        </a>
+
+    </nav>
+
+
+    <div class="nav-right">
+
+        <div class="search-box">
+
+            <input
+                type="text"
+                id="searchInput"
+                placeholder="Search food..."
+            >
+
+            <button id="searchBtn">
+                🔍
+            </button>
+
+        </div>
+
+
+        <button
+            class="cart-button"
+            id="cartButton"
+        >
+            🛒
+            <span id="cartCount">0</span>
+        </button>
+
+    </div>
+
+</header>
+
+
+
+<!-- ================= HERO ================= -->
+
+<section class="hero">
+
+    <div class="hero-content">
+
+        <div class="hero-emoji">
+            🥢
+        </div>
+
+        <p>
+            WELCOME TO URBAN TADKA
+        </p>
+
+        <h1>
+            Chinese Cuisine
+        </h1>
+
+        <span>
+            Delicious Chinese flavours,
+            fresh ingredients and amazing taste.
+        </span>
+
+    </div>
+
+</section>
+
+
+
+<!-- ================= MENU ================= -->
+
+<section class="menu-section">
+
+    <div class="heading">
+
+        <p>
+            EXPLORE CHINESE FOOD
+        </p>
+
+        <h2>
+            Chinese Menu
+        </h2>
+
+        <span>
+            Choose your favourite Chinese dish
+        </span>
+
+    </div>
+
+
+
+    <!-- ================= CATEGORIES ================= -->
+
+    <div class="categories">
+
+        <button
+            class="category active"
+            data-category="all"
+        >
+            All
+        </button>
+
+        <button
+            class="category"
+            data-category="starter"
+        >
+            Starters
+        </button>
+
+        <button
+            class="category"
+            data-category="noodles"
+        >
+            Noodles
+        </button>
+
+        <button
+            class="category"
+            data-category="rice"
+        >
+            Rice
+        </button>
+
+        <button
+            class="category"
+            data-category="momos"
+        >
+            Momos
+        </button>
+
+        <button
+            class="category"
+            data-category="main"
+        >
+            Main Course
+        </button>
+
+        <button
+            class="category"
+            data-category="soup"
+        >
+            Soups
+        </button>
+
+        <button
+            class="category"
+            data-category="dessert"
+        >
+            Desserts
+        </button>
+
+    </div>
+
+
+
+    <!-- ================= FOOD GRID ================= -->
+
+    <div
+        class="food-grid"
+        id="foodGrid"
+    >
+
+
+        <!-- FOOD 1 -->
+
+        <div
+            class="food-card"
+            data-category="starter"
+            data-name="Spring Rolls"
+        >
+
+            <div class="food-image">
+
+                <!-- APNI IMAGE YAHAN LAGAO -->
+
+                <img
+                    src="https://th.bing.com/th/id/OIP.axbRC7uvjcUdOHckUknTBQHaHa?r=0&o=7rm=3&rs=1&pid=ImgDetMain&o=7&rm=3"
+                    alt="Spring Rolls"
+                >
+
+            </div>
+
+
+            <div class="food-content">
+
+                <span class="tag">
+                    VEG
+                </span>
+
+                <h3>
+                    Spring Rolls
+                </h3>
+
+                <p>
+                    Crispy rolls filled with
+                    fresh vegetables.
+                </p>
+
+
+                <div class="food-bottom">
+
+                    <strong>
+                        ₹149
+                    </strong>
+
+                    <button
+                        class="add-cart"
+                        data-name="Spring Rolls"
+                        data-price="149"
+                    >
+                        Add to Cart
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- FOOD 2 -->
+
+        <div
+            class="food-card"
+            data-category="starter"
+            data-name="Chilli Paneer"
+        >
+
+            <div class="food-image">
+
+                <img
+                    src="https://tse4.mm.bing.net/th/id/OIP.hxAC3hl7hMxxsc6tmZzVNgHaE8?r=0&w=1800&h=1200&rs=1&pid=ImgDetMain&o=7&rm=3"
+                    alt="Chilli Paneer"
+                >
+
+            </div>
+
+
+            <div class="food-content">
+
+                <span class="tag">
+                    VEG
+                </span>
+
+                <h3>
+                    Chilli Paneer
+                </h3>
+
+                <p>
+                    Crispy paneer tossed with
+                    spicy Chinese sauce.
+                </p>
+
+
+                <div class="food-bottom">
+
+                    <strong>
+                        ₹229
+                    </strong>
+
+                    <button
+                        class="add-cart"
+                        data-name="Chilli Paneer"
+                        data-price="229"
+                    >
+                        Add to Cart
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- FOOD 3 -->
+
+        <div
+            class="food-card"
+            data-category="starter"
+            data-name="Chilli Chicken"
+        >
+
+            <div class="food-image">
+
+                <img
+                    src="https://myfoodstory.com/wp-content/uploads/2019/10/Easy-Chinese-Chilli-Chicken-1.jpg"
+                    alt="Chilli Chicken"
+                >
+
+            </div>
+
+
+            <div class="food-content">
+
+                <span class="tag nonveg">
+                    NON-VEG
+                </span>
+
+                <h3>
+                    Chilli Chicken
+                </h3>
+
+                <p>
+                    Tender chicken tossed with
+                    spicy chilli sauce.
+                </p>
+
+
+                <div class="food-bottom">
+
+                    <strong>
+                        ₹269
+                    </strong>
+
+                    <button
+                        class="add-cart"
+                        data-name="Chilli Chicken"
+                        data-price="269"
+                    >
+                        Add to Cart
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- FOOD 4 -->
+
+        <div
+            class="food-card"
+            data-category="noodles"
+            data-name="Hakka Noodles"
+        >
+
+            <div class="food-image">
+
+                <img
+                    src="https://www.indianhealthyrecipes.com/wp-content/uploads/2021/07/hakka-noodles-recipe.jpg"
+                    alt="Hakka Noodles"
+                >
+
+            </div>
+
+
+            <div class="food-content">
+
+                <span class="tag bestseller">
+                    BESTSELLER
+                </span>
+
+                <h3>
+                    Hakka Noodles
+                </h3>
+
+                <p>
+                    Stir-fried noodles with
+                    fresh vegetables and sauces.
+                </p>
+
+
+                <div class="food-bottom">
+
+                    <strong>
+                        ₹189
+                    </strong>
+
+                    <button
+                        class="add-cart"
+                        data-name="Hakka Noodles"
+                        data-price="189"
+                    >
+                        Add to Cart
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- FOOD 5 -->
+
+        <div
+            class="food-card"
+            data-category="noodles"
+            data-name="Schezwan Noodles"
+        >
+
+            <div class="food-image">
+
+                <img
+                    src="https://th.bing.com/th/id/OIP.gZQ5sNfIvHLlHcw_Rb0d1gHaLH?r=0&o=7rm=3&rs=1&pid=ImgDetMain&o=7&rm=3"
+                    alt="Schezwan Noodles"
+                >
+
+            </div>
+
+
+            <div class="food-content">
+
+                <span class="tag">
+                    SPICY
+                </span>
+
+                <h3>
+                    Schezwan Noodles
+                </h3>
+
+                <p>
+                    Spicy noodles cooked with
+                    Schezwan sauce.
+                </p>
+
+
+                <div class="food-bottom">
+
+                    <strong>
+                        ₹209
+                    </strong>
+
+                    <button
+                        class="add-cart"
+                        data-name="Schezwan Noodles"
+                        data-price="209"
+                    >
+                        Add to Cart
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- FOOD 6 -->
+
+        <div
+            class="food-card"
+            data-category="rice"
+            data-name="Fried Rice"
+        >
+
+            <div class="food-image">
+
+                <img
+                    src="https://tse2.mm.bing.net/th/id/OIP.blf9LoJwDdBtVWMsnbkZAAHaEJ?r=0&rs=1&pid=ImgDetMain&o=7&rm=3"
+                    alt="Fried Rice"
+                >
+
+            </div>
+
+
+            <div class="food-content">
+
+                <span class="tag">
+                    VEG
+                </span>
+
+                <h3>
+                    Veg Fried Rice
+                </h3>
+
+                <p>
+                    Fluffy rice stir-fried with
+                    vegetables and Chinese sauces.
+                </p>
+
+
+                <div class="food-bottom">
+
+                    <strong>
+                        ₹179
+                    </strong>
+
+                    <button
+                        class="add-cart"
+                        data-name="Veg Fried Rice"
+                        data-price="179"
+                    >
+                        Add to Cart
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- FOOD 7 -->
+
+        <div
+            class="food-card"
+            data-category="rice"
+            data-name="Chicken Fried Rice"
+        >
+
+            <div class="food-image">
+
+                <img
+                    src="https://tse1.mm.bing.net/th/id/OIP.w1Isbq1qTlB0RiIDWTRI0AHaHa?r=0&rs=1&pid=ImgDetMain&o=7&rm=3"
+                    alt="Chicken Fried Rice"
+                >
+
+            </div>
+
+
+            <div class="food-content">
+
+                <span class="tag nonveg">
+                    NON-VEG
+                </span>
+
+                <h3>
+                    Chicken Fried Rice
+                </h3>
+
+                <p>
+                    Fried rice cooked with
+                    juicy chicken pieces.
+                </p>
+
+
+                <div class="food-bottom">
+
+                    <strong>
+                        ₹229
+                    </strong>
+
+                    <button
+                        class="add-cart"
+                        data-name="Chicken Fried Rice"
+                        data-price="229"
+                    >
+                        Add to Cart
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- FOOD 8 -->
+
+        <div
+            class="food-card"
+            data-category="momos"
+            data-name="Veg Momos"
+        >
+
+            <div class="food-image">
+
+                <img
+                    src="https://tse1.mm.bing.net/th/id/OIP.tWM_5xO-b4GXeM7akhbTWwHaHa?r=0&rs=1&pid=ImgDetMain&o=7&rm=3"
+                    alt="Veg Momos"
+                >
+
+            </div>
+
+
+            <div class="food-content">
+
+                <span class="tag bestseller">
+                    POPULAR
+                </span>
+
+                <h3>
+                    Veg Momos
+                </h3>
+
+                <p>
+                    Soft steamed momos filled
+                    with fresh vegetables.
+                </p>
+
+
+                <div class="food-bottom">
+
+                    <strong>
+                        ₹129
+                    </strong>
+
+                    <button
+                        class="add-cart"
+                        data-name="Veg Momos"
+                        data-price="129"
+                    >
+                        Add to Cart
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- FOOD 9 -->
+
+        <div
+            class="food-card"
+            data-category="momos"
+            data-name="Chicken Momos"
+        >
+
+            <div class="food-image">
+
+                <img
+                    src="https://tse3.mm.bing.net/th/id/OIP.cOY-AbnHKZzA0Kpb7wBT1wHaHa?r=0&rs=1&pid=ImgDetMain&o=7&rm=3"
+                    alt="Chicken Momos"
+                >
+
+            </div>
+
+
+            <div class="food-content">
+
+                <span class="tag nonveg">
+                    NON-VEG
+                </span>
+
+                <h3>
+                    Chicken Momos
+                </h3>
+
+                <p>
+                    Steamed momos filled with
+                    juicy chicken.
+                </p>
+
+
+                <div class="food-bottom">
+
+                    <strong>
+                        ₹169
+                    </strong>
+
+                    <button
+                        class="add-cart"
+                        data-name="Chicken Momos"
+                        data-price="169"
+                    >
+                        Add to Cart
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- FOOD 10 -->
+
+        <div
+            class="food-card"
+            data-category="main"
+            data-name="Manchurian"
+        >
+
+            <div class="food-image">
+
+                <img
+                    src="https://tse1.mm.bing.net/th/id/OIP.RtvRXzELNEUbjvpLH4CTfgHaEK?r=0&rs=1&pid=ImgDetMain&o=7&rm=3"
+                    alt="Veg Manchurian"
+                >
+
+            </div>
+
+
+            <div class="food-content">
+
+                <span class="tag">
+                    VEG
+                </span>
+
+                <h3>
+                    Veg Manchurian
+                </h3>
+
+                <p>
+                    Crispy vegetable balls
+                    in spicy Manchurian gravy.
+                </p>
+
+
+                <div class="food-bottom">
+
+                    <strong>
+                        ₹199
+                    </strong>
+
+                    <button
+                        class="add-cart"
+                        data-name="Veg Manchurian"
+                        data-price="199"
+                    >
+                        Add to Cart
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- FOOD 11 -->
+
+        <div
+            class="food-card"
+            data-category="main"
+            data-name="Chicken Manchurian"
+        >
+
+            <div class="food-image">
+
+                <img
+                    src="https://tse2.mm.bing.net/th/id/OIP.MsRQ0MIyQzFZqXH38uo-jwHaHa?r=0&rs=1&pid=ImgDetMain&o=7&rm=3"
+                    alt="Chicken Manchurian"
+                >
+
+            </div>
+
+
+            <div class="food-content">
+
+                <span class="tag nonveg">
+                    NON-VEG
+                </span>
+
+                <h3>
+                    Chicken Manchurian
+                </h3>
+
+                <p>
+                    Chicken cooked with
+                    delicious Manchurian sauce.
+                </p>
+
+
+                <div class="food-bottom">
+
+                    <strong>
+                        ₹259
+                    </strong>
+
+                    <button
+                        class="add-cart"
+                        data-name="Chicken Manchurian"
+                        data-price="259"
+                    >
+                        Add to Cart
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- FOOD 12 -->
+
+        <div
+            class="food-card"
+            data-category="soup"
+            data-name="Hot and Sour Soup"
+        >
+
+            <div class="food-image">
+
+                <img
+                    src="https://www.cookwithmanali.com/wp-content/uploads/2024/01/Hot-and-Sour-Soup-Vegetarian.jpg"
+                    alt="Hot and Sour Soup"
+                >
+
+            </div>
+
+
+            <div class="food-content">
+
+                <span class="tag">
+                    VEG
+                </span>
+
+                <h3>
+                    Hot & Sour Soup
+                </h3>
+
+                <p>
+                    Hot and spicy Chinese soup
+                    with fresh vegetables.
+                </p>
+
+
+                <div class="food-bottom">
+
+                    <strong>
+                        ₹129
+                    </strong>
+
+                    <button
+                        class="add-cart"
+                        data-name="Hot & Sour Soup"
+                        data-price="129"
+                    >
+                        Add to Cart
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- FOOD 13 -->
+
+        <div
+            class="food-card"
+            data-category="soup"
+            data-name="Sweet Corn Soup"
+        >
+
+            <div class="food-image">
+
+                <img
+                    src="https://th.bing.com/th/id/OIP.QphNbldwwlu7LGew6Rs5MgHaLH?r=0&o=7rm=3&rs=1&pid=ImgDetMain&o=7&rm=3"
+                    alt="Sweet Corn Soup"
+                >
+
+            </div>
+
+
+            <div class="food-content">
+
+                <span class="tag">
+                    VEG
+                </span>
+
+                <h3>
+                    Sweet Corn Soup
+                </h3>
+
+                <p>
+                    Warm and creamy soup
+                    with sweet corn.
+                </p>
+
+
+                <div class="food-bottom">
+
+                    <strong>
+                        ₹119
+                    </strong>
+
+                    <button
+                        class="add-cart"
+                        data-name="Sweet Corn Soup"
+                        data-price="119"
+                    >
+                        Add to Cart
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- FOOD 14 -->
+
+        <div
+            class="food-card"
+            data-category="dessert"
+            data-name="Honey Chilli Potato"
+        >
+
+            <div class="food-image">
+
+                <img
+                    src="https://tse1.mm.bing.net/th/id/OIP.YcBO3bp12vTvcWVbZzMBWQHaJQ?r=0&rs=1&pid=ImgDetMain&o=7&rm=3"
+                    alt="Honey Chilli Potato"
+                >
+
+            </div>
+
+
+            <div class="food-content">
+
+                <span class="tag">
+                    POPULAR
+                </span>
+
+                <h3>
+                    Honey Chilli Potato
+                </h3>
+
+                <p>
+                    Crispy potato tossed with
+                    honey and chilli sauce.
+                </p>
+
+
+                <div class="food-bottom">
+
+                    <strong>
+                        ₹179
+                    </strong>
+
+                    <button
+                        class="add-cart"
+                        data-name="Honey Chilli Potato"
+                        data-price="179"
+                    >
+                        Add to Cart
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- FOOD 15 -->
+
+        <div
+            class="food-card"
+            data-category="main"
+            data-name="Schezwan Chicken"
+        >
+
+            <div class="food-image">
+
+                <img
+                    src="https://tse4.mm.bing.net/th/id/OIP.6b-j-PgAFu9PjmO5dxiOIgHaHa?r=0&rs=1&pid=ImgDetMain&o=7&rm=3"
+                     alt="Schezwan Chicken"
+                >
+
+            </div>
+
+
+            <div class="food-content">
+
+                <span class="tag nonveg">
+                    NON-VEG
+                </span>
+
+                <h3>
+                    Schezwan Chicken
+                </h3>
+
+                <p>
+                    Spicy chicken cooked with
+                    Schezwan chilli sauce.
+                </p>
+
+
+                <div class="food-bottom">
+
+                    <strong>
+                        ₹289
+                    </strong>
+
+                    <button
+                        class="add-cart"
+                        data-name="Schezwan Chicken"
+                        data-price="289"
+                    >
+                        Add to Cart
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- FOOD 16 -->
+
+        <div
+            class="food-card"
+            data-category="dessert"
+            data-name="Fried Ice Cream"
+        >
+
+            <div class="food-image">
+
+                <img
+                    src="https://th.bing.com/th/id/OIP.FaGjChGQxU8MRrgoZKtw3AHaHa?r=0&o=7rm=3&rs=1&pid=ImgDetMain&o=7&rm=3"
+                    alt="Fried Ice Cream"
+                >
+
+            </div>
+
+
+            <div class="food-content">
+
+                <span class="tag">
+                    SWEET
+                </span>
+
+                <h3>
+                    Fried Ice Cream
+                </h3>
+
+                <p>
+                    Crispy outside with
+                    creamy ice cream inside.
+                </p>
+
+
+                <div class="food-bottom">
+
+                    <strong>
+                        ₹199
+                    </strong>
+
+                    <button
+                        class="add-cart"
+                        data-name="Fried Ice Cream"
+                        data-price="199"
+                    >
+                        Add to Cart
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+</section>
+
+
+
+<!-- ================= CART ================= -->
+
+<div
+    class="cart-overlay"
+    id="cartOverlay"
+>
+
+    <div class="cart-box">
+
+        <button
+            class="close-cart"
+            id="closeCart"
+        >
+            ×
+        </button>
+
+
+        <h2>
+            Your Cart 🛒
+        </h2>
+
+
+        <div id="cartItems">
+
+            <p class="empty-cart">
+                Your cart is empty.
+            </p>
+
+        </div>
+
+
+        <div class="cart-total">
+
+            <span>
+                Total
+            </span>
+
+            <strong id="cartTotal">
+                ₹0
+            </strong>
+
+        </div>
+
+
+        <button
+            class="checkout-btn"
+            id="checkoutBtn"
+        >
+            Checkout
+        </button>
+
+    </div>
+
+</div>
+
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+
+    <div class="footer-logo">
+        Urban <span>Tadka</span>
+    </div>
+
+    <p>
+        Taste the world, one plate at a time.
+    </p>
+
+    <small>
+        © 2026 Urban Tadka. All Rights Reserved.
+    </small>
+
+</footer>
+
+
+<script src="chinese.js"></script>
+
+</body>
+</html>

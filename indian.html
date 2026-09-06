@@ -1,0 +1,1252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Indian Food | Urban Tadka</title>
+
+    <link rel="stylesheet" href="indian.css">
+
+</head>
+
+
+<body>
+
+
+    <!-- =========================
+         NAVBAR
+    ========================== -->
+
+    <header class="navbar">
+
+        <a href="index.html" class="logo">
+            <span>Urban</span> Tadka
+        </a>
+
+
+        <nav class="nav-links">
+
+            <a href="index.html">
+                Home
+            </a>
+
+            <a href="indian.html" class="active">
+                Indian
+            </a>
+
+            <a href="chinese.html">
+                Chinese
+            </a>
+
+            <a href="italian.html">
+                Italian
+            </a>
+
+            <a href="south-indian.html">
+                South Indian
+            </a>
+
+            <a href="fast-food.html">
+                Fast Food
+            </a>
+
+            <a href="desserts.html">
+                Desserts
+            </a>
+
+        </nav>
+
+
+        <div class="nav-right">
+
+            <div class="search-box">
+
+                <input
+                    type="text"
+                    id="searchInput"
+                    placeholder="Search food..."
+                >
+
+                <button id="searchBtn">
+                    🔍
+                </button>
+
+            </div>
+
+
+            <button
+                class="cart-button"
+                id="cartButton"
+            >
+
+                🛒
+
+                <span id="cartCount">
+                    0
+                </span>
+
+            </button>
+
+        </div>
+
+    </header>
+
+
+
+    <!-- =========================
+         HERO
+    ========================== -->
+
+    <section class="hero">
+
+        <div class="hero-content">
+
+            <div class="hero-emoji">
+                🇮🇳
+            </div>
+
+            <p>
+                WELCOME TO URBAN TADKA
+            </p>
+
+            <h1>
+                Indian Cuisine
+            </h1>
+
+            <span>
+                Authentic Indian flavours,
+                rich spices and traditional recipes.
+            </span>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =========================
+         MENU
+    ========================== -->
+
+    <section class="menu-section">
+
+
+        <div class="heading">
+
+            <p>
+                OUR MENU
+            </p>
+
+            <h2>
+                Indian Food
+            </h2>
+
+            <span>
+                Choose your favourite dish
+            </span>
+
+        </div>
+
+
+
+        <!-- =========================
+             CATEGORY BUTTONS
+        ========================== -->
+
+        <div class="categories">
+
+            <button
+                class="category active"
+                data-category="all"
+            >
+                All
+            </button>
+
+            <button
+                class="category"
+                data-category="starter"
+            >
+                Starters
+            </button>
+
+            <button
+                class="category"
+                data-category="main"
+            >
+                Main Course
+            </button>
+
+            <button
+                class="category"
+                data-category="biryani"
+            >
+                Biryani
+            </button>
+
+            <button
+                class="category"
+                data-category="naan"
+            >
+                Naan
+            </button>
+
+            <button
+                class="category"
+                data-category="tandoor"
+            >
+                Tandoor
+            </button>
+
+            <button
+                class="category"
+                data-category="thali"
+            >
+                Thali
+            </button>
+
+            <button
+                class="category"
+                data-category="dessert"
+            >
+                Desserts
+            </button>
+
+        </div>
+
+
+
+        <!-- =========================
+             FOOD GRID
+        ========================== -->
+
+        <div class="food-grid" id="foodGrid">
+
+
+
+            <!-- =========================
+                 FOOD 1
+            ========================== -->
+
+            <div
+                class="food-card"
+                data-category="starter"
+                data-name="Paneer Tikka"
+            >
+
+                <div class="food-image">
+
+                    <!-- YAHAN APNI IMAGE LAGAO -->
+
+                    <img
+                        src="i1.avif"
+                        alt="Paneer Tikka"
+                    >
+
+                </div>
+
+
+                <div class="food-content">
+
+                    <span class="tag">
+                        VEG
+                    </span>
+
+                    <h3>
+                        Paneer Tikka
+                    </h3>
+
+                    <p>
+                        Delicious grilled paneer
+                        with Indian spices.
+                    </p>
+
+
+                    <div class="food-bottom">
+
+                        <strong>
+                            ₹249
+                        </strong>
+
+                        <button
+                            class="add-cart"
+                            data-name="Paneer Tikka"
+                            data-price="249"
+                        >
+                            Add to Cart
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- =========================
+                 FOOD 2
+            ========================== -->
+
+            <div
+                class="food-card"
+                data-category="starter"
+                data-name="Chicken Tikka"
+            >
+
+                <div class="food-image">
+
+                    <img
+                        src="img/i2.webp"
+                        alt="Chicken Tikka"
+                    >
+
+                </div>
+
+
+                <div class="food-content">
+
+                    <span class="tag nonveg">
+                        NON-VEG
+                    </span>
+
+                    <h3>
+                        Chicken Tikka
+                    </h3>
+
+                    <p>
+                        Juicy chicken pieces
+                        grilled with spices.
+                    </p>
+
+
+                    <div class="food-bottom">
+
+                        <strong>
+                            ₹299
+                        </strong>
+
+                        <button
+                            class="add-cart"
+                            data-name="Chicken Tikka"
+                            data-price="299"
+                        >
+                            Add to Cart
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- =========================
+                 FOOD 3
+            ========================== -->
+
+            <div
+                class="food-card"
+                data-category="main"
+                data-name="Butter Chicken"
+            >
+
+                <div class="food-image">
+
+                    <img
+                        src="img/i3.webp"
+                        alt="Butter Chicken"
+                    >
+
+                </div>
+
+
+                <div class="food-content">
+
+                    <span class="tag bestseller">
+                        BESTSELLER
+                    </span>
+
+                    <h3>
+                        Butter Chicken
+                    </h3>
+
+                    <p>
+                        Creamy tomato gravy
+                        with tender chicken.
+                    </p>
+
+
+                    <div class="food-bottom">
+
+                        <strong>
+                            ₹299
+                        </strong>
+
+                        <button
+                            class="add-cart"
+                            data-name="Butter Chicken"
+                            data-price="299"
+                        >
+                            Add to Cart
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- =========================
+                 FOOD 4
+            ========================== -->
+
+            <div
+                class="food-card"
+                data-category="main"
+                data-name="Shahi Paneer"
+            >
+
+                <div class="food-image">
+
+                    <img
+                        src="https://tse1.mm.bing.net/th/id/OIP.di8uNgK47kD0XO3zJuIpnAHaLH?r=0&rs=1&pid=ImgDetMain&o=7&rm=3"
+                        alt="Shahi Paneer"
+                    >
+
+                </div>
+
+
+                <div class="food-content">
+
+                    <span class="tag">
+                        VEG
+                    </span>
+
+                    <h3>
+                        Shahi Paneer
+                    </h3>
+
+                    <p>
+                        Soft paneer in rich
+                        creamy royal gravy.
+                    </p>
+
+
+                    <div class="food-bottom">
+
+                        <strong>
+                            ₹249
+                        </strong>
+
+                        <button
+                            class="add-cart"
+                            data-name="Shahi Paneer"
+                            data-price="249"
+                        >
+                            Add to Cart
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- =========================
+                 FOOD 5
+            ========================== -->
+
+            <div
+                class="food-card"
+                data-category="main"
+                data-name="Dal Makhani"
+            >
+
+                <div class="food-image">
+
+                    <img
+                        src="https://tse4.mm.bing.net/th/id/OIP.bXHF-wZd2GHlgHHdV6oImQHaLH?r=0&w=1024&h=1536&rs=1&pid=ImgDetMain&o=7&rm=3"
+                        alt="Dal Makhani"
+                    >
+
+                </div>
+
+
+                <div class="food-content">
+
+                    <span class="tag">
+                        VEG
+                    </span>
+
+                    <h3>
+                        Dal Makhani
+                    </h3>
+
+                    <p>
+                        Slow cooked dal with
+                        butter and cream.
+                    </p>
+
+
+                    <div class="food-bottom">
+
+                        <strong>
+                            ₹199
+                        </strong>
+
+                        <button
+                            class="add-cart"
+                            data-name="Dal Makhani"
+                            data-price="199"
+                        >
+                            Add to Cart
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- =========================
+                 FOOD 6
+            ========================== -->
+
+            <div
+                class="food-card"
+                data-category="biryani"
+                data-name="Chicken Biryani"
+            >
+
+                <div class="food-image">
+
+                    <img
+                        src="https://th.bing.com/th/id/R.8d2cdacda32fda0daa5a7e2bbc7e21a7?rik=y0uUUCha8PRdwQ&riu=http%3a%2f%2fthespiceway.com%2fcdn%2fshop%2farticles%2fchicken_dum_biryani.jpg%3fv%3d1710897141&ehk=wLkKQUMwkC92WKRbZzA9co6KbcYurUi%2f6%2bL7uz0o9cQ%3d&risl=&pid=ImgRaw&r=0"
+                        alt="Chicken Biryani"
+                    >
+
+                </div>
+
+
+                <div class="food-content">
+
+                    <span class="tag bestseller">
+                        BESTSELLER
+                    </span>
+
+                    <h3>
+                        Chicken Biryani
+                    </h3>
+
+                    <p>
+                        Aromatic basmati rice
+                        with spicy chicken.
+                    </p>
+
+
+                    <div class="food-bottom">
+
+                        <strong>
+                            ₹279
+                        </strong>
+
+                        <button
+                            class="add-cart"
+                            data-name="Chicken Biryani"
+                            data-price="279"
+                        >
+                            Add to Cart
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- =========================
+                 FOOD 7
+            ========================== -->
+
+            <div
+                class="food-card"
+                data-category="biryani"
+                data-name="Veg Biryani"
+            >
+
+                <div class="food-image">
+
+                    <img
+                        src="https://www.indianhealthyrecipes.com/wp-content/uploads/2019/04/veg-biryani-recipe.jpg"
+                        alt="Veg Biryani"
+                    >
+
+                </div>
+
+
+                <div class="food-content">
+
+                    <span class="tag">
+                        VEG
+                    </span>
+
+                    <h3>
+                        Veg Biryani
+                    </h3>
+
+                    <p>
+                        Fragrant rice with
+                        fresh vegetables.
+                    </p>
+
+
+                    <div class="food-bottom">
+
+                        <strong>
+                            ₹229
+                        </strong>
+
+                        <button
+                            class="add-cart"
+                            data-name="Veg Biryani"
+                            data-price="229"
+                        >
+                            Add to Cart
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- =========================
+                 FOOD 8
+            ========================== -->
+
+            <div
+                class="food-card"
+                data-category="biryani"
+                data-name="Mutton Biryani"
+            >
+
+                <div class="food-image">
+
+                    <img
+                        src="https://png.pngtree.com/thumb_back/fh260/background/20240328/pngtree-mutton-biryani-meal-in-a-plate-on-table-image_15645442.jpg"
+                        alt="Mutton Biryani"
+                    >
+
+                </div>
+
+
+                <div class="food-content">
+
+                    <span class="tag nonveg">
+                        NON-VEG
+                    </span>
+
+                    <h3>
+                        Mutton Biryani
+                    </h3>
+
+                    <p>
+                        Tender mutton with
+                        aromatic basmati rice.
+                    </p>
+
+
+                    <div class="food-bottom">
+
+                        <strong>
+                            ₹349
+                        </strong>
+
+                        <button
+                            class="add-cart"
+                            data-name="Mutton Biryani"
+                            data-price="349"
+                        >
+                            Add to Cart
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- =========================
+                 FOOD 9
+            ========================== -->
+
+            <div
+                class="food-card"
+                data-category="naan"
+                data-name="Butter Naan"
+            >
+
+                <div class="food-image">
+
+                    <img
+                        src="https://tse4.mm.bing.net/th/id/OIP.ONOBpPO3BLCjX2ivSMVdHAAAAA?r=0&rs=1&pid=ImgDetMain&o=7&rm=3"
+                        alt="Butter Naan"
+                    >
+
+                </div>
+
+
+                <div class="food-content">
+
+                    <span class="tag">
+                        VEG
+                    </span>
+
+                    <h3>
+                        Butter Naan
+                    </h3>
+
+                    <p>
+                        Soft naan topped
+                        with melted butter.
+                    </p>
+
+
+                    <div class="food-bottom">
+
+                        <strong>
+                            ₹59
+                        </strong>
+
+                        <button
+                            class="add-cart"
+                            data-name="Butter Naan"
+                            data-price="59"
+                        >
+                            Add to Cart
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- =========================
+                 FOOD 10
+            ========================== -->
+
+            <div
+                class="food-card"
+                data-category="naan"
+                data-name="Garlic Naan"
+            >
+
+                <div class="food-image">
+
+                    <img
+                        src="https://th.bing.com/th/id/OIP.WpWmiF5M22HCIZ1trEQNIAHaLH?r=0&o=7rm=3&rs=1&pid=ImgDetMain&o=7&rm=3"
+                        alt="Garlic Naan"
+                    >
+
+                </div>
+
+
+                <div class="food-content">
+
+                    <span class="tag">
+                        POPULAR
+                    </span>
+
+                    <h3>
+                        Garlic Naan
+                    </h3>
+
+                    <p>
+                        Soft naan with fresh
+                        garlic and butter.
+                    </p>
+
+
+                    <div class="food-bottom">
+
+                        <strong>
+                            ₹79
+                        </strong>
+
+                        <button
+                            class="add-cart"
+                            data-name="Garlic Naan"
+                            data-price="79"
+                        >
+                            Add to Cart
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- =========================
+                 FOOD 11
+            ========================== -->
+
+            <div
+                class="food-card"
+                data-category="tandoor"
+                data-name="Tandoori Chicken"
+            >
+
+                <div class="food-image">
+
+                    <img
+                        src="https://tse2.mm.bing.net/th/id/OIP.21xfGQ9jUczQhBfBTgASHwHaEJ?r=0&rs=1&pid=ImgDetMain&o=7&rm=3"
+                        alt="Tandoori Chicken"
+                    >
+
+                </div>
+
+
+                <div class="food-content">
+
+                    <span class="tag nonveg">
+                        NON-VEG
+                    </span>
+
+                    <h3>
+                        Tandoori Chicken
+                    </h3>
+
+                    <p>
+                        Chicken roasted in
+                        traditional tandoor.
+                    </p>
+
+
+                    <div class="food-bottom">
+
+                        <strong>
+                            ₹329
+                        </strong>
+
+                        <button
+                            class="add-cart"
+                            data-name="Tandoori Chicken"
+                            data-price="329"
+                        >
+                            Add to Cart
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- =========================
+                 FOOD 12
+            ========================== -->
+
+            <div
+                class="food-card"
+                data-category="tandoor"
+                data-name="Tandoori Paneer"
+            >
+
+                <div class="food-image">
+
+                    <img
+                        src="https://tse2.mm.bing.net/th/id/OIP.NxqaifGcxDRfbHXarHjVkAHaE7?r=0&rs=1&pid=ImgDetMain&o=7&rm=3"
+                        alt="Tandoori Paneer"
+                    >
+
+                </div>
+
+
+                <div class="food-content">
+
+                    <span class="tag">
+                        VEG
+                    </span>
+
+                    <h3>
+                        Tandoori Paneer
+                    </h3>
+
+                    <p>
+                        Paneer grilled with
+                        smoky tandoori flavours.
+                    </p>
+
+
+                    <div class="food-bottom">
+
+                        <strong>
+                            ₹259
+                        </strong>
+
+                        <button
+                            class="add-cart"
+                            data-name="Tandoori Paneer"
+                            data-price="259"
+                        >
+                            Add to Cart
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- =========================
+                 FOOD 13
+            ========================== -->
+
+            <div
+                class="food-card"
+                data-category="thali"
+                data-name="Veg Thali"
+            >
+
+                <div class="food-image">
+
+                    <img
+                        src="https://tse2.mm.bing.net/th/id/OIP.l3h54Jp7fhcpSCb0Cu-GRwHaHa?r=0&w=750&h=750&rs=1&pid=ImgDetMain&o=7&rm=3"
+                        alt="Veg Thali"
+                    >
+
+                </div>
+
+
+                <div class="food-content">
+
+                    <span class="tag">
+                        VEG
+                    </span>
+
+                    <h3>
+                        Special Veg Thali
+                    </h3>
+
+                    <p>
+                        Complete Indian meal
+                        with multiple dishes.
+                    </p>
+
+
+                    <div class="food-bottom">
+
+                        <strong>
+                            ₹299
+                        </strong>
+
+                        <button
+                            class="add-cart"
+                            data-name="Special Veg Thali"
+                            data-price="299"
+                        >
+                            Add to Cart
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- =========================
+                 FOOD 14
+            ========================== -->
+
+            <div
+                class="food-card"
+                data-category="thali"
+                data-name="Punjabi Thali"
+            >
+
+                <div class="food-image">
+
+                    <img
+                        src="https://tse2.mm.bing.net/th/id/OIP.fioLoEs8J4Mtr-11ma6wfwHaE8?r=0&rs=1&pid=ImgDetMain&o=7&rm=3"
+                        alt="Punjabi Thali"
+                    >
+
+                </div>
+
+
+                <div class="food-content">
+
+                    <span class="tag">
+                        SPECIAL
+                    </span>
+
+                    <h3>
+                        Punjabi Thali
+                    </h3>
+
+                    <p>
+                        Traditional Punjabi
+                        dishes in one thali.
+                    </p>
+
+
+                    <div class="food-bottom">
+
+                        <strong>
+                            ₹349
+                        </strong>
+
+                        <button
+                            class="add-cart"
+                            data-name="Punjabi Thali"
+                            data-price="349"
+                        >
+                            Add to Cart
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- =========================
+                 FOOD 15
+            ========================== -->
+
+            <div
+                class="food-card"
+                data-category="dessert"
+                data-name="Gulab Jamun"
+            >
+
+                <div class="food-image">
+
+                    <img
+                        src="https://thumbs.dreamstime.com/b/indian-traditional-dessert-gulab-jamun-gulab-jamun-302101202.jpg"
+                        alt="Gulab Jamun"
+                    >
+
+                </div>
+
+
+                <div class="food-content">
+
+                    <span class="tag">
+                        SWEET
+                    </span>
+
+                    <h3>
+                        Gulab Jamun
+                    </h3>
+
+                    <p>
+                        Soft sweet dumplings
+                        in sugar syrup.
+                    </p>
+
+
+                    <div class="food-bottom">
+
+                        <strong>
+                            ₹99
+                        </strong>
+
+                        <button
+                            class="add-cart"
+                            data-name="Gulab Jamun"
+                            data-price="99"
+                        >
+                            Add to Cart
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- =========================
+                 FOOD 16
+            ========================== -->
+
+            <div
+                class="food-card"
+                data-category="dessert"
+                data-name="Rasmalai"
+            >
+
+                <div class="food-image">
+
+                    <img
+                        src="https://tse1.mm.bing.net/th/id/OIP.Awg0rNeqxdU48OuR-vG4cAHaJQ?r=0&rs=1&pid=ImgDetMain&o=7&rm=3"
+                        alt="Rasmalai"
+                    >
+
+                </div>
+
+
+                <div class="food-content">
+
+                    <span class="tag">
+                        POPULAR
+                    </span>
+
+                    <h3>
+                        Rasmalai
+                    </h3>
+
+                    <p>
+                        Soft rasmalai in
+                        creamy sweet milk.
+                    </p>
+
+
+                    <div class="food-bottom">
+
+                        <strong>
+                            ₹129
+                        </strong>
+
+                        <button
+                            class="add-cart"
+                            data-name="Rasmalai"
+                            data-price="129"
+                        >
+                            Add to Cart
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =========================
+         CART
+    ========================== -->
+
+    <div
+        class="cart-overlay"
+        id="cartOverlay"
+    >
+
+        <div class="cart-box">
+
+            <button
+                class="close-cart"
+                id="closeCart"
+            >
+                ×
+            </button>
+
+
+            <h2>
+                Your Cart 🛒
+            </h2>
+
+
+            <div id="cartItems">
+
+                <p class="empty-cart">
+                    Your cart is empty.
+                </p>
+
+            </div>
+
+
+            <div class="cart-total">
+
+                <span>
+                    Total
+                </span>
+
+                <strong id="cartTotal">
+                    ₹0
+                </strong>
+
+            </div>
+
+
+            <button
+                class="checkout-btn"
+                id="checkoutBtn"
+            >
+                Checkout
+            </button>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- =========================
+         FOOTER
+    ========================== -->
+
+    <footer>
+
+        <div class="footer-logo">
+            Urban <span>Tadka</span>
+        </div>
+
+        <p>
+            Taste the world, one plate at a time.
+        </p>
+
+        <small>
+            © 2026 Urban Tadka. All Rights Reserved.
+        </small>
+
+    </footer>
+
+
+    <script src="indian.js"></script>
+
+</body>
+
+</html>

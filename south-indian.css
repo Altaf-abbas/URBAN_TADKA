@@ -1,0 +1,834 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #fffaf6;
+    color: #222;
+}
+
+
+/* ================= NAVBAR ================= */
+
+.navbar {
+    width: 100%;
+    height: 86px;
+
+    background: #ffffff;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 4.2%;
+
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+
+/* LOGO */
+
+.logo {
+    text-decoration: none;
+
+    color: #222;
+
+    font-size: 31px;
+    font-weight: 700;
+
+    white-space: nowrap;
+}
+
+.logo span {
+    color: #f05a00;
+}
+
+
+/* NAV LINKS */
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.nav-links a {
+    text-decoration: none;
+
+    color: #444;
+
+    font-size: 16px;
+    font-weight: 600;
+
+    padding: 10px 0;
+
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: #f05a00;
+}
+
+.nav-links a.active {
+    color: #f05a00;
+
+    border-bottom: 2px solid #f05a00;
+}
+
+
+/* ================= NAV RIGHT ================= */
+
+.nav-right {
+    display: flex;
+    align-items: center;
+
+    gap: 12px;
+}
+
+
+/* SEARCH BOX */
+
+.search-box {
+    width: 245px;
+    height: 50px;
+
+    background: #f5f5f5;
+
+    border-radius: 30px;
+
+    display: flex;
+    align-items: center;
+
+    padding: 0 15px;
+}
+
+.search-box input {
+    width: 100%;
+
+    border: none;
+    outline: none;
+
+    background: transparent;
+
+    font-size: 15px;
+}
+
+.search-box button {
+    border: none;
+
+    background: transparent;
+
+    font-size: 20px;
+
+    cursor: pointer;
+}
+
+
+/* CART */
+
+.cart-button {
+    width: 55px;
+    height: 55px;
+
+    border: none;
+
+    border-radius: 50%;
+
+    background: #f05a00;
+
+    color: white;
+
+    font-size: 22px;
+
+    cursor: pointer;
+
+    position: relative;
+}
+
+.cart-button:hover {
+    background: #d94e00;
+}
+
+.cart-button span {
+    position: absolute;
+
+    top: -5px;
+    right: -2px;
+
+    width: 23px;
+    height: 23px;
+
+    background: #222;
+
+    color: white;
+
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 13px;
+}
+
+
+/* ================= HERO ================= */
+
+.hero {
+    height: 350px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    background:
+        linear-gradient(
+            rgba(0, 0, 0, 0.58),
+            rgba(0, 0, 0, 0.58)
+        ),
+        url("images/south-indian-banner.jpg");
+
+    background-size: cover;
+
+    background-position: center;
+}
+
+.hero-content {
+    color: white;
+}
+
+.hero-emoji {
+    font-size: 48px;
+
+    margin-bottom: 10px;
+}
+
+.hero-content p {
+    font-size: 14px;
+
+    letter-spacing: 2px;
+
+    font-weight: bold;
+
+    margin-bottom: 12px;
+}
+
+.hero-content h1 {
+    font-size: 55px;
+
+    margin-bottom: 12px;
+}
+
+.hero-content span {
+    font-size: 19px;
+
+    color: #eeeeee;
+}
+
+
+/* ================= MENU ================= */
+
+.menu-section {
+    width: 100%;
+
+    padding: 55px 4.5%;
+}
+
+
+/* HEADING */
+
+.heading {
+    text-align: center;
+
+    margin-bottom: 40px;
+}
+
+.heading p {
+    color: #f05a00;
+
+    font-size: 14px;
+
+    font-weight: bold;
+
+    letter-spacing: 2px;
+
+    margin-bottom: 8px;
+}
+
+.heading h2 {
+    font-size: 42px;
+
+    margin-bottom: 10px;
+}
+
+.heading span {
+    color: #777;
+
+    font-size: 17px;
+}
+
+
+/* ================= CATEGORIES ================= */
+
+.categories {
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    flex-wrap: wrap;
+
+    gap: 13px;
+
+    margin-bottom: 45px;
+}
+
+.category {
+    padding: 13px 25px;
+
+    border: 2px solid #f05a00;
+
+    background: transparent;
+
+    color: #f05a00;
+
+    border-radius: 30px;
+
+    font-size: 15px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.category:hover {
+    background: #f05a00;
+
+    color: white;
+}
+
+.category.active {
+    background: #f05a00;
+
+    color: white;
+}
+
+
+/* ================= FOOD GRID ================= */
+
+.food-grid {
+    width: 100%;
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 32px;
+}
+
+
+/* ================= FOOD CARD ================= */
+
+.food-card {
+    background: white;
+
+    border-radius: 20px;
+
+    overflow: hidden;
+
+    box-shadow:
+        0 8px 30px rgba(0, 0, 0, 0.08);
+
+    border: 1px solid #eeeeee;
+
+    transition: 0.3s;
+}
+
+.food-card:hover {
+    transform: translateY(-8px);
+
+    box-shadow:
+        0 15px 35px rgba(0, 0, 0, 0.14);
+}
+
+
+/* FOOD IMAGE */
+
+.food-image {
+    width: 100%;
+
+    height: 285px;
+
+    overflow: hidden;
+}
+
+.food-image img {
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+    display: block;
+
+    transition: 0.5s;
+}
+
+.food-card:hover .food-image img {
+    transform: scale(1.05);
+}
+
+
+/* FOOD CONTENT */
+
+.food-content {
+    padding: 24px 27px 22px;
+}
+
+
+/* TAG */
+
+.tag {
+    display: inline-block;
+
+    padding: 7px 12px;
+
+    border-radius: 20px;
+
+    background: #fff0df;
+
+    color: #f05a00;
+
+    font-size: 12px;
+
+    font-weight: bold;
+
+    margin-bottom: 12px;
+}
+
+.tag.bestseller {
+    background: #fff0bd;
+
+    color: #b77900;
+}
+
+.tag.nonveg {
+    background: #ffe1e1;
+
+    color: #df0000;
+}
+
+
+/* FOOD NAME */
+
+.food-content h3 {
+    font-size: 27px;
+
+    margin-bottom: 12px;
+}
+
+
+/* DESCRIPTION */
+
+.food-content p {
+    color: #777;
+
+    font-size: 16px;
+
+    line-height: 1.5;
+
+    min-height: 48px;
+}
+
+
+/* BOTTOM */
+
+.food-bottom {
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    margin-top: 32px;
+}
+
+
+/* PRICE */
+
+.food-bottom strong {
+    color: #f05a00;
+
+    font-size: 24px;
+}
+
+
+/* ADD CART */
+
+.add-cart {
+    border: none;
+
+    background: #222;
+
+    color: white;
+
+    padding: 13px 20px;
+
+    border-radius: 9px;
+
+    font-size: 15px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.add-cart:hover {
+    background: #f05a00;
+}
+
+
+/* ================= CART OVERLAY ================= */
+
+.cart-overlay {
+    display: none;
+
+    position: fixed;
+
+    inset: 0;
+
+    background: rgba(0, 0, 0, 0.65);
+
+    z-index: 2000;
+
+    align-items: center;
+
+    justify-content: center;
+}
+
+
+/* CART BOX */
+
+.cart-box {
+    width: 500px;
+
+    max-width: 90%;
+
+    max-height: 80vh;
+
+    overflow-y: auto;
+
+    background: white;
+
+    border-radius: 20px;
+
+    padding: 30px;
+
+    position: relative;
+
+    box-shadow: 0 15px 50px rgba(0,0,0,0.2);
+}
+
+.cart-box h2 {
+    font-size: 27px;
+
+    margin-bottom: 20px;
+}
+
+
+/* CLOSE */
+
+.close-cart {
+    position: absolute;
+
+    top: 12px;
+
+    right: 20px;
+
+    border: none;
+
+    background: transparent;
+
+    font-size: 32px;
+
+    cursor: pointer;
+}
+
+
+/* CART ITEM */
+
+.cart-item {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 15px;
+
+    padding: 15px 0;
+
+    border-bottom: 1px solid #ddd;
+}
+
+.cart-item h4 {
+    font-size: 17px;
+
+    margin-bottom: 6px;
+}
+
+.cart-item p {
+    color: #f05a00;
+
+    font-weight: bold;
+}
+
+
+/* REMOVE */
+
+.remove-btn {
+    border: none;
+
+    background: #e63946;
+
+    color: white;
+
+    padding: 7px 12px;
+
+    border-radius: 6px;
+
+    cursor: pointer;
+}
+
+
+/* TOTAL */
+
+.cart-total {
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    margin-top: 25px;
+
+    padding-top: 18px;
+
+    border-top: 2px solid #ddd;
+}
+
+.cart-total span {
+    font-size: 18px;
+
+    font-weight: bold;
+}
+
+.cart-total strong {
+    font-size: 22px;
+
+    color: #f05a00;
+}
+
+
+/* CHECKOUT */
+
+.checkout-btn {
+    width: 100%;
+
+    margin-top: 18px;
+
+    padding: 14px;
+
+    border: none;
+
+    border-radius: 9px;
+
+    background: #f05a00;
+
+    color: white;
+
+    font-size: 16px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+.checkout-btn:hover {
+    background: #d94e00;
+}
+
+
+/* EMPTY CART */
+
+.empty-cart {
+    text-align: center;
+
+    color: #777;
+
+    padding: 30px 0;
+}
+
+
+/* ================= FOOTER ================= */
+
+footer {
+    background: #222;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 35px 20px;
+}
+
+.footer-logo {
+    font-size: 28px;
+
+    font-weight: bold;
+
+    margin-bottom: 10px;
+}
+
+.footer-logo span {
+    color: #f05a00;
+}
+
+footer p {
+    color: #ccc;
+
+    margin-bottom: 10px;
+}
+
+footer small {
+    color: #888;
+}
+
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 1250px) {
+
+    .nav-links {
+        gap: 15px;
+    }
+
+    .search-box {
+        width: 200px;
+    }
+
+    .food-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+@media (max-width: 900px) {
+
+    .navbar {
+        height: auto;
+
+        padding: 18px 4%;
+
+        flex-wrap: wrap;
+
+        gap: 15px;
+    }
+
+    .nav-links {
+        order: 3;
+
+        width: 100%;
+
+        justify-content: center;
+
+        flex-wrap: wrap;
+    }
+
+    .nav-right {
+        margin-left: auto;
+    }
+}
+
+
+@media (max-width: 650px) {
+
+    .hero {
+        height: 300px;
+    }
+
+    .hero-content h1 {
+        font-size: 38px;
+    }
+
+    .hero-content span {
+        font-size: 15px;
+    }
+
+    .heading h2 {
+        font-size: 34px;
+    }
+
+    .food-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .food-image {
+        height: 250px;
+    }
+
+    .search-box {
+        width: 170px;
+    }
+
+    .categories {
+        gap: 8px;
+    }
+
+    .category {
+        padding: 10px 16px;
+    }
+}
+
+
+@media (max-width: 450px) {
+
+    .logo {
+        font-size: 25px;
+    }
+
+    .search-box {
+        width: 145px;
+    }
+
+    .cart-button {
+        width: 48px;
+        height: 48px;
+    }
+
+    .food-content h3 {
+        font-size: 23px;
+    }
+
+    .food-bottom strong {
+        font-size: 21px;
+    }
+
+    .add-cart {
+        padding: 11px 15px;
+    }
+}
